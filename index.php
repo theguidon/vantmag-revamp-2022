@@ -1,5 +1,5 @@
 <?php get_header(); ?>
 
-INDEX PAGE
+<h1>INDEX PAGE</h1>
 
 <?php get_footer(); ?>
