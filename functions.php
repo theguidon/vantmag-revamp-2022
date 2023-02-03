@@ -9,6 +9,7 @@ function vant_register_styles() {
   wp_enqueue_style('styles-styles', get_template_directory_uri() . '/style.css', array(), $version, 'all');
 
   wp_enqueue_style('styles-global', get_template_directory_uri() . '/assets/css/global.css', array(), $version, 'all');
+  wp_enqueue_style('styles-fonts', get_template_directory_uri() . '/assets/css/fonts.css', array(), $version, 'all');
 
   wp_enqueue_style('styles-header', get_template_directory_uri() . '/assets/css/header.css', array(), $version, 'all');
   wp_enqueue_style('styles-footer', get_template_directory_uri() . '/assets/css/footer.css', array(), $version, 'all');
