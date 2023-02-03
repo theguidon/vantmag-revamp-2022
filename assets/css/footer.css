@@ -1,0 +1,17 @@
+.container, .right-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5D61BA;
+    color: #FFFFFF;
+}
+
+.left-flex {
+    flex-basis: 40%;
+    list-style-type: none;
+}
+
+.right-flex {
+    flex-basis: 20%;
+    list-style-type: none;
+}
