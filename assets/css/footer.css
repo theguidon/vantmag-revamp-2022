@@ -1,17 +1,42 @@
-.container, .right-container {
+.container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #5D61BA;
     color: #FFFFFF;
+    padding: 3.5rem;
 }
 
 .left-flex {
-    flex-basis: 40%;
-    list-style-type: none;
+    flex-basis: 120%;
+    margin-left: 12rem;
 }
 
 .right-flex {
-    flex-basis: 20%;
+    flex-basis: 90%;
+    margin-left: 5rem;
+    flex-flow: column wrap;
+}
+
+ul li {
     list-style-type: none;
+    margin: 0.5rem 0;
+}
+
+.category-title {
+    margin-bottom: .5rem;
+}
+
+.category-items {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.ul-left {
+    flex-basis: 50%;
+}
+
+.ul-right {
+    flex-basis: 30%;
+    text-indent: -40%;
 }
