@@ -1,8 +1,14 @@
 FOOTER
   <div class="container">
     <div class="left-flex">
-      <!-- vantmag logo -->
-      <h4>Vantage Magazine</h4>
+      <div class="footer-title">
+        <div class="footer-title-left">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/EmblemWhite.png" alt="VantMag Logo"/>
+        </div>
+        <div class="footer-title-right">
+          <h3>Vantage Magazine</h3>
+        </div>
+      </div>
       <p>© THE GUIDON 2023. All rights reserved.</p>
       <br><br>
       <p>The Guidon is the official publication of Ateneo de Manila University.</p>
