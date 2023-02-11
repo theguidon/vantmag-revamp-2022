@@ -27,6 +27,8 @@ footer > .footer-container {
 
 .footer-container .right-flex {
     margin-left: 10rem;
+    font-family: 'Poppins';
+    font-size: 12.25px;
 }
 
 .footer-container .right-flex .category-title {
@@ -56,13 +58,16 @@ footer .footer-container .left-flex .footer-title {
     margin-left: -30px;
 }
 
-.footer-title-right h3 {
-    font-family: Calluna;
+.grid-container .grid-item a {
+    text-decoration: none;
+    color: white;
 }
 
 .grid-container .grid-item a li {
     list-style-type: none;
     text-align: left;
+    font-family: 'Poppins';
+    font-size: 12.25px;
 }
 
 /* On screens that are 600px or less, set the background color to olive */
