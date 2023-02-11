@@ -25,6 +25,12 @@
   --hype: #d63ba3;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
 h1,
 .h1 {
   font-size: 112px;
@@ -106,4 +112,50 @@ h6,
   to {
     background-position-x: 0%;
   }
+}
+
+/* chip */
+.chip {
+  color: white;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: var(--music);
+
+  padding: 4px 8px;
+  border-radius: 64px;
+  width: fit-content;
+  height: 28px;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: 4px;
+
+  text-decoration: none;
+}
+
+.chip > img {
+  width: 16px;
+  height: 16px;
+}
+
+/* article */
+.article {
+}
+
+.article .thumbnail {
+  border-radius: 4px;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.article .title {
+  font-family: "Calluna", serif;
+}
+
+.article .author {
+  text-decoration: none;
 }
