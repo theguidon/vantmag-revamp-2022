@@ -13,35 +13,35 @@
           <b><p class="category-title">CATEGORIES</p></b>
         </div>
 
-        <div class="grid-container">
-          <div class="grid-item">
-            <a href="#"><li>TV & FILM</li></a>
-          </div>
-          <div class="grid-item"> 
-            <a href="#"><li>FOOD</li></a>
-          </div>
-          <div class="grid-item">
-            <a href="#"><li>THEATRE & ARTS</li></a>
-          </div>  
-          <div class="grid-item">
-            <a href="#"><li>VANTAGE</li></a>
-          </div>
-          <div class="grid-item">
-            <a href="#"><li>MUSIC</li></a>
-          </div>
-          <div class="grid-item">
-            <a class="item" href="#"><li>EXPOSE</li></a>
-          </div>  
-          <div class="grid-item">
-            <a class="item" href="#"><li>HUB</li></a>
-          </div>
-          <div class="grid-item">
-            <a class="item" href="#"><li>ABOUT</li></a>
-          </div>
-          <div class="grid-item">
-            <a class="item" href="#"><li>HYPE</li></a>
-          </div>  
-        </div>
+        <ul class="grid-container">
+          <li class="grid-item">
+            <a href="#">TV & FILM</a>
+          </li>
+          <li class="grid-item"> 
+            <a href="#">FOO</a>
+          </li>
+          <li class="grid-item">
+            <a href="#">THEATRE & ARTS</a>
+          </li>  
+          <li class="grid-item">
+            <a href="#">VANTAGE</a>
+          </li>
+          <li class="grid-item">
+            <a href="#">MUSIC</a>
+          </li>
+          <li class="grid-item">
+            <a href="#">EXPOSE></a>
+          </li>  
+          <li class="grid-item">
+            <a href="#">HUB</a>
+          </li>
+          <li class="grid-item">
+            <a href="#">ABOUT</a>
+          </li>
+          <li class="grid-item">
+            <a href="#">HYPE</a>
+          </li>  
+        </ul>
       </div>
         
       </div>
