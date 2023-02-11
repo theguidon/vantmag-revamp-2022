@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
-<h1>INDEX PAGE</h1>
+<main id="#index">
+</main>
 
 <?php get_footer(); ?>
