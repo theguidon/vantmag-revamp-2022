@@ -9,7 +9,7 @@
             <h3>Vantage Magazine</h3>
           </div>
         </div>
-        <p>© THE GUIDON 2023. All rights reserved.</p>
+        <p>© The GUIDON 2023. All rights reserved.</p>
         <br><br>
         <p>The Guidon is the official publication of Ateneo de Manila University.</p>
       </div>
