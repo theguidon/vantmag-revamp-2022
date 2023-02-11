@@ -5,7 +5,7 @@
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/LongFormWhite.png" alt="VantMag Logo"/>
         </div>
         <p>© The GUIDON 2023. All rights reserved.</p>
-        <p>The Guidon is the official publication of Ateneo de Manila University.</p>
+        <p>The GUIDON is the official publication of Ateneo de Manila University.</p>
       </div>
       
       <div class="right-flex">
