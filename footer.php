@@ -18,7 +18,7 @@
             <a href="#">TV & FILM</a>
           </li>
           <li class="grid-item"> 
-            <a href="#">FOO</a>
+            <a href="#">FOOD</a>
           </li>
           <li class="grid-item">
             <a href="#">THEATRE & ARTS</a>
