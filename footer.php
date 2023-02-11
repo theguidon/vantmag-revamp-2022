@@ -1,5 +1,4 @@
-FOOTER
-  <footer>
+<footer>
     <div class="footer-container">
       <div class="left-flex">
         <div class="footer-title">
