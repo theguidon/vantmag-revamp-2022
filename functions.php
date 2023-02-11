@@ -14,7 +14,7 @@ function vant_register_styles() {
   wp_enqueue_style('styles-header', get_template_directory_uri() . '/assets/css/header.css', array(), $version, 'all');
   wp_enqueue_style('styles-footer', get_template_directory_uri() . '/assets/css/footer.css', array(), $version, 'all');
 
-  wp_enqueue_style('styles-footer', get_template_directory_uri() . '/assets/css/index.css', array(), $version, 'all');
+  wp_enqueue_style('styles-index', get_template_directory_uri() . '/assets/css/index.css', array(), $version, 'all');
 }
 
 add_action('wp_enqueue_scripts', 'vant_register_styles');
@@ -54,7 +54,7 @@ function vant_get_color($name) {
       return '#755489';
     case 'Music':
       return '#b5c932';
-    case 'Vantage': // used for Vantage POINT
+    case 'Vantage':
     case 'Vantage POINT':
     case 'The GUIDON':
       return '#1c4481';
@@ -62,6 +62,9 @@ function vant_get_color($name) {
       return '#3dbb95';
     case 'Hype':
       return '#d63ba3';
+    case 'Expose':
+    case 'Exposé':
+      return '#f6B50b';
 
     case 'Uncategorized':
     default:
@@ -69,5 +72,21 @@ function vant_get_color($name) {
   }
 }
 
+
+/**
+ * Returns tag and category names
+ */
+function vant_get_categ_tag_name($name) {
+  switch ($name) {
+    case 'TV and Film':
+      return 'TV & Film';
+    case 'Theater and the Arts':
+      return 'Theater & Arts';
+    case 'Expose':
+      return 'Exposé';
+    default:
+      return $name;
+  }
+}
 
 ?>
