@@ -9,6 +9,20 @@
 }
 
 :root {
+  --vantage-purple: #5d61ba;
+  --texas-rose: #fda94f;
+  --burnt-sienna: #ed6356;
+  --geraldine: #f99a94;
+  --science-blue: #006ecd;
+  --mountain-meadow: #15cc70;
+
+  --food: #f9a524;
+  --tv-film: #ef3e68;
+  --theater-arts: #755489;
+  --music: #b5c932;
+  --guidon-blue: #1c4481;
+  --hub: #3dbb95;
+  --hype: #d63ba3;
 }
 
 h1,

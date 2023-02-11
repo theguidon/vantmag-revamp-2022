@@ -36,4 +36,36 @@ add_action('wp_enqueue_scripts', 'vant_register_scripts');
 add_theme_support('admin-bar', array('callback' => '__return_false'));
 
 
+/**
+ * Returns branding colors
+ */
+function vant_get_color($name) {
+  switch ($name) {
+    case 'Vantage Purple':
+      return '#5d61ba';
+
+    case 'Food':
+      return '#f9a524';
+    case 'TV & Film':
+      return '#ef3e68';
+    case 'Theater & Arts':
+      return '#755489';
+    case 'Music':
+      return '#b5c932';
+    case 'Vantage': // used for Vantage POINT
+    case 'Vantage POINT':
+    case 'The GUIDON':
+      return '#1c4481';
+    case 'Hub':
+      return '#3dbb95';
+    case 'Hype':
+      return '#d63ba3';
+
+    case 'Uncategorized':
+    default:
+      return '#333333';
+  }
+}
+
+
 ?>
