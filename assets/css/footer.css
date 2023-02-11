@@ -1,6 +1,7 @@
 footer {
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
+    padding: 60px 160px;
     display: block;
     background-color: #5D61BA;
 }
@@ -8,41 +9,37 @@ footer {
 footer > .footer-container {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
     color: #FFFFFF;
-    width: 100%;
-    max-width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 60px 160px;
-}
-
-.footer-container .left-flex {
-    margin-right: 10rem;
 }
 
 .footer-container .left-flex p {
     margin-bottom: 15px;
 }
 
-.footer-container .right-flex {
-    margin-left: 10rem;
+footer > .footer-container > .right-flex {
     font-family: 'Poppins';
     font-size: 12.25px;
+    margin-left: 360px;
 }
 
-.footer-container .right-flex .category-title {
-    margin-bottom: 10px;
+footer > .footer-container .right-flex .category-title {
+    margin-bottom: 20px;
+    /* flex-basis: 100%; */
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    /* grid-template-columns: auto auto auto; */
+    grid-template-rows: 30px 30px 30px;
+    grid-template-columns: 100px 100px 100px;
     grid-row-gap: 16px;
     list-style-type: none;
 }
+
 .grid-item {
-    padding: 20px;
     text-align: left;
 }
 

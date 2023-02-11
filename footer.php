@@ -1,5 +1,6 @@
 <footer>
     <div class="footer-container">
+      
       <div class="left-flex -m">
         <div class="footer-title">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/LongFormWhite.png" alt="VantMag Logo"/>
@@ -30,7 +31,7 @@
             <a href="#">MUSIC</a>
           </li>
           <li class="grid-item">
-            <a href="#">EXPOSE></a>
+            <a href="#">EXPOSE</a>
           </li>  
           <li class="grid-item">
             <a href="#">HUB</a>
@@ -44,8 +45,7 @@
         </ul>
       </div>
         
-      </div>
     </div>
-  </footer>
+</footer>
   </body>
 </html>
