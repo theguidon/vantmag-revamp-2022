@@ -32,6 +32,16 @@ footer > .footer-container .right-flex .category-title {
     /* flex-basis: 100%; */
 }
 
+footer .footer-container .left-flex .socialmedia-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+footer .footer-container .left-flex .socialmedia-icons img {
+    margin-right: 12px;
+}
+
 .grid-container {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
