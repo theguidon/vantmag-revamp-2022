@@ -7,7 +7,7 @@
     $has_icon = true;
 ?>
 
-<a
+<div
   class="chip"
   style="background-color: <?php echo vant_get_color($rev_name) ?>"
   href="<?php echo get_term_link($args['id']) ?>"
@@ -16,4 +16,4 @@
     <img src="<?php echo get_template_directory_uri() . "/assets/images/icons/chip/" . $t->slug . ".svg" ?>" />
   <?php } ?>
   <?php echo $rev_name; ?>
-</a>
+</div>
