@@ -13,6 +13,7 @@ footer > .footer-container {
     color: #FFFFFF;
     max-width: 1200px;
     margin: 0 auto;
+    align-items: center;
 }
 
 .footer-container .left-flex p {
@@ -26,17 +27,20 @@ footer > .footer-container > .right-flex {
 }
 
 footer > .footer-container .right-flex .category-title {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+    font-family: Poppins, sans-serif;
     /* flex-basis: 100%; */
 }
 
 .grid-container {
     display: grid;
-    /* grid-template-columns: auto auto auto; */
-    grid-template-rows: 30px 30px 30px;
-    grid-template-columns: 100px 100px 100px;
-    grid-row-gap: 16px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr min-content min-content;
+    row-gap: 16px;
+    column-gap: 24px;
     list-style-type: none;
+
+    grid-auto-flow: column;
 }
 
 .grid-item {
@@ -55,16 +59,17 @@ footer .footer-container .left-flex .footer-title {
     margin-left: -30px;
 }
 
+.grid-container .grid-item {
+  min-width: 58px;
+}
+
 .grid-container .grid-item a {
     text-decoration: none;
     color: white;
-}
-
-.grid-container .grid-item a li {
     list-style-type: none;
     text-align: left;
     font-family: 'Poppins';
-    font-size: 12.25px;
+    font-size: 12.25px;    
 }
 
 /* On screens that are 600px or less, set the background color to olive */

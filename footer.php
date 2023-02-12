@@ -25,23 +25,23 @@
             <a href="#">THEATRE & ARTS</a>
           </li>  
           <li class="grid-item">
-            <a href="#">VANTAGE</a>
-          </li>
-          <li class="grid-item">
             <a href="#">MUSIC</a>
           </li>
           <li class="grid-item">
-            <a href="#">EXPOSE</a>
-          </li>  
+            <a href="#">HYPE</a>
+          </li>
           <li class="grid-item">
             <a href="#">HUB</a>
           </li>
           <li class="grid-item">
-            <a href="#">ABOUT</a>
+            <a href="#">VANTAGE</a>
           </li>
           <li class="grid-item">
-            <a href="#">HYPE</a>
-          </li>  
+            <a href="#">EXPOSE</a>
+          </li>
+          <li class="grid-item">
+            <a href="#">ABOUT</a>
+          </li>
         </ul>
       </div>
         
