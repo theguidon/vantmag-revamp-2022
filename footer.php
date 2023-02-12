@@ -8,11 +8,11 @@
         <p>© The GUIDON 2023. All rights reserved.</p>
         <p>The GUIDON is the official publication of Ateneo de Manila University.</p>
         <div class="socialmedia-icons">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" alt="VantMag Logo"/>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/twitter.svg" alt="VantMag Logo"/>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg" alt="VantMag Logo"/>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/spotify.svg" alt="VantMag Logo"/>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/youtube.svg" alt="VantMag Logo"/>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/facebook.svg" alt="VantMag Logo"/>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/twitter.svg" alt="VantMag Logo"/>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/instagram.svg" alt="VantMag Logo"/>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/spotify.svg" alt="VantMag Logo"/>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/youtube.svg" alt="VantMag Logo"/>
         </div>
       </div>
       
