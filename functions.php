@@ -89,4 +89,23 @@ function vant_get_categ_tag_name($name) {
   }
 }
 
+
+/**
+ * Returns author list in string
+ */
+function vant_format_auths($auths) {
+  $out = "";
+  for ($i = 0; $i < count($auths); $i++) {
+    if ($i != 0)
+      $out .= ", ";
+    
+    if ($i != 0 && $i + 1 == count($auths))
+      $out .= "and ";
+
+    $out .= $auths[$i]->display_name;
+  }
+
+  return $out;
+}
+
 ?>

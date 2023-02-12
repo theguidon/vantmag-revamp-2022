@@ -126,7 +126,7 @@ h6,
   padding: 4px 8px;
   border-radius: 64px;
   width: fit-content;
-  height: 28px;
+  min-height: 28px;
 
   display: flex;
   flex-flow: row nowrap;
@@ -143,13 +143,31 @@ h6,
 
 /* article */
 .article {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.article .thumbnail-container,
+.article.thumbnail-container {
+  overflow: clip;
+  border-radius: 4px;
 }
 
 .article .thumbnail {
-  border-radius: 4px;
-
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
+  background-size: cover;
+  background-position: center;
+
+  transition: 0.2s;
+  overflow: clip;
+}
+
+.article:hover .thumbnail {
+  transform: scale(1.05);
 }
 
 .article .title {
