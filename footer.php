@@ -8,11 +8,11 @@
         <p>© The GUIDON 2023. All rights reserved.</p>
         <p>The GUIDON is the official publication of Ateneo de Manila University.</p>
         <div class="socialmedia-icons">
-          <a href="https://www.facebook.com/TheGUIDON"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/facebook.svg" alt="VantMag Logo"/></a>
-          <a href="https://twitter.com/TheGUIDON"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/twitter.svg" alt="VantMag Logo"/></a>
-          <a href="https://www.instagram.com/theguidon/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/instagram.svg" alt="VantMag Logo"/></a>
-          <a href="https://open.spotify.com/show/0t2PxYpSft6HfoPHibwAvT"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/spotify.svg" alt="VantMag Logo"/></a>
-          <a href="https://www.youtube.com/@TheGuidon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/youtube.svg" alt="VantMag Logo"/></a>
+          <a href="https://www.facebook.com/TheGUIDON" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/facebook.svg" alt="VantMag Logo"/></a>
+          <a href="https://twitter.com/TheGUIDON" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/twitter.svg" alt="VantMag Logo"/></a>
+          <a href="https://www.instagram.com/theguidon/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/instagram.svg" alt="VantMag Logo"/></a>
+          <a href="https://open.spotify.com/show/0t2PxYpSft6HfoPHibwAvT" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/spotify.svg" alt="VantMag Logo"/></a>
+          <a href="https://www.youtube.com/@TheGuidon" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/youtube.svg" alt="VantMag Logo"/></a>
         </div>
       </div>
       
