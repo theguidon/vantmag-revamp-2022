@@ -1,0 +1,128 @@
+#index #all-content {
+  margin: 80px 0 0;
+}
+
+#index #all-content .heading-container {
+  margin: 0 0 16px;
+}
+
+#index #all-content .heading-container h3 {
+  font-family: Calluna, serif;
+}
+
+#index #all-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+}
+
+#index #all-content aside .article {
+  margin: 0 0 52px;
+}
+
+#index #all-content aside .article .thumbnail-container {
+  margin: 0 0 24px;
+  width: 100%;
+  height: auto;
+}
+
+#index #all-content aside .article .thumbnail-container .thumbnail {
+  transform: scale(1.05);
+}
+
+#index #all-content aside .article:hover .thumbnail-container .thumbnail {
+  transform: scale(1.10);
+}
+
+#index #all-content aside .article .title,
+#index #all-content aside .article .excerpt {
+  margin: 0 0 16px;
+}
+
+/* main articles */
+#index #all-content .main-content {
+  grid-column: 2 / 4;
+}
+
+#index #all-content #tabs {
+  border: 2px solid var(--vantage-purple);
+  border-radius: 4px;
+
+  display: flex;
+  flex-flow: row nowrap;
+
+  margin: 0 0 24px;
+}
+
+#index #all-content #tabs > * {
+  background-color: transparent;
+  border: none;
+
+  flex-shrink: 1;
+  flex-grow: 1;
+
+  text-transform: uppercase;
+  padding: 16px 4px;
+  font-weight: bold;
+  color: black;
+
+  outline: 1px solid var(--vantage-purple);
+
+  cursor: pointer;
+}
+
+#index #all-content #tabs > *.active {
+  background-color: var(--vantage-purple);
+
+  color: white;
+}
+
+#index #all-content #content-heading {
+  display: none;
+}
+
+#index #all-content #content-heading.active {
+  display: block;
+}
+
+#index #all-content .articles-container {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  row-gap: 20px;
+
+  display: none;
+}
+
+#index #all-content .articles-container.active {
+  display: grid;
+}
+
+#index #all-content .articles-container .article {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 32px;
+
+  min-height: 200px;
+}
+
+#index #all-content .articles-container .article .thumbnail-container {
+  height: 100%;
+  max-height: 200px;
+}
+
+#index #all-content .articles-container .article .details {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#index #all-content .articles-container .article .chip {
+  margin: 0 0 8px;
+}
+
+#index #all-content .articles-container .article .title {
+  margin: 0 0 4px;
+}
+
+#index #all-content .articles-container .article .author {
+  margin: auto 0 0;
+}

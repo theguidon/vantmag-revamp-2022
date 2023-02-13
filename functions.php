@@ -6,15 +6,18 @@
 function vant_register_styles() {
   $version = wp_get_theme()->get('Version');
 
-  wp_enqueue_style('styles-styles', get_template_directory_uri() . '/style.css', array(), $version, 'all');
+  wp_enqueue_style('styles-styles', get_template_directory_uri() . '/style.css', array(), $version);
 
-  wp_enqueue_style('styles-global', get_template_directory_uri() . '/assets/css/global.css', array(), $version, 'all');
-  wp_enqueue_style('styles-fonts', get_template_directory_uri() . '/assets/css/fonts.css', array(), $version, 'all');
+  wp_enqueue_style('styles-global', get_template_directory_uri() . '/assets/css/global.css', array(), $version);
+  wp_enqueue_style('styles-fonts', get_template_directory_uri() . '/assets/css/fonts.css', array(), $version);
 
-  wp_enqueue_style('styles-header', get_template_directory_uri() . '/assets/css/header.css', array(), $version, 'all');
-  wp_enqueue_style('styles-footer', get_template_directory_uri() . '/assets/css/footer.css', array(), $version, 'all');
+  wp_enqueue_style('styles-header', get_template_directory_uri() . '/assets/css/header.css', array(), $version);
+  wp_enqueue_style('styles-footer', get_template_directory_uri() . '/assets/css/footer.css', array(), $version);
 
-  wp_enqueue_style('styles-index', get_template_directory_uri() . '/assets/css/index.css', array(), $version, 'all');
+  wp_enqueue_style('styles-index-global', get_template_directory_uri() . '/assets/css/index/index.css', array(), $version);
+  wp_enqueue_style('styles-index-latest', get_template_directory_uri() . '/assets/css/index/latest.css', array(), $version);
+  wp_enqueue_style('styles-index-suggestions', get_template_directory_uri() . '/assets/css/index/suggestions.css', array(), $version);
+  wp_enqueue_style('styles-index-all-content', get_template_directory_uri() . '/assets/css/index/all-content.css', array(), $version);
 }
 
 add_action('wp_enqueue_scripts', 'vant_register_styles');
@@ -26,7 +29,9 @@ add_action('wp_enqueue_scripts', 'vant_register_styles');
 function vant_register_scripts() {
   $version = wp_get_theme()->get('Version');
 
-  // wp_enqueue_script('jquery', get_template_directory_uri() . 'assets/js/jquery-3.6.0.min.js', array(), $version);
+  wp_enqueue_script('jquery', get_template_directory_uri() . 'assets/js/jquery-3.6.3.min.js', array(), $version);
+
+  wp_enqueue_script('scripts-index', get_template_directory_uri() . '/assets/js/index.js', array(), $version);
 }
 
 add_action('wp_enqueue_scripts', 'vant_register_scripts');
@@ -154,6 +159,7 @@ add_action( 'init', 'vantmag_register_menus' );
 function vantmag_register_menus() {
   register_nav_menus(
     array(
+      'main-menu' => __('Main Menu'),
       'beats-menu' => __('Beats Menu'),
       'about-menu' => __('About Link Menu'),
       'social-menu' => __('Social Media Links')
