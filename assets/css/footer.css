@@ -38,7 +38,7 @@ footer .footer-container .left-flex .socialmedia-icons {
     justify-content: left;
 }
 
-footer .footer-container .left-flex .socialmedia-icons img {
+footer .footer-container .left-flex .socialmedia-icons a {
     margin-right: 12px;
 }
 
