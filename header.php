@@ -24,4 +24,62 @@
   <?php wp_head(); ?>
 </head>
 
-HEADER
+<header>
+   <div class="header-top">
+      <a class="logo" href="#">
+         <img
+            src="<?php echo get_template_directory_uri();?> ./assets/images/LongFormWhite.png"
+            alt="Vantage Magazine Logo"
+            height="109px">
+      </a>
+   </div>
+   <div class="header-bottom">
+      <div class="search-bar-container">
+            <img
+               src="<?php echo get_template_directory_uri();?> ./assets/images/icons/search.svg"
+               alt="Search icon">
+            <form>
+               <input type="text" id="search-input" placeholder="Search...">
+            </form>
+      </div>
+      <nav>
+         <ul>
+            <li class="nav-item">
+               <a href="#">TV & Film</a>
+            </li>
+            &bull;
+            <li class="nav-item">
+               <a href="#">Food</a>
+            </li>
+            &bull;
+            <li class="nav-item">
+               <a href="#">Theater and Arts</a>
+            </li>
+            &bull;
+            <li class="nav-item">
+               <a href="#">Music</a>
+            </li>
+            &bull;
+            <li class="nav-item">
+               <a href="#">Hype</a>
+            </li>
+            &bull;
+            <li class="nav-item">
+               <a href="#">Hub</a>
+            </li>
+            &bull;
+            <li class="nav-item">
+               <a href="#">Vantage</a>
+            </li>
+            &bull;
+            <li class="nav-item">
+               <a href="#">Expose</a>
+            </li>
+            &bull;
+            <li class="nav-item">
+               <a href="#">About</a>
+            </li>
+         </ul>
+      </nav>
+   </div>
+</header>
