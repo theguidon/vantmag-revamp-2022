@@ -193,3 +193,71 @@ h6,
   height: 1px;
   background-color: black;
 }
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+  h1,
+  .h1 {
+    font-size: 40px;
+  }
+  
+  h2,
+  .h2 {
+    font-size: 32px;
+  }
+  
+  h3,
+  .h3 {
+    font-size: 24px;
+  }
+  
+  h4,
+  .h4 {
+    font-size: 22px;
+  }
+  
+  h5,
+  .h5 {
+    font-size: 20px;
+  }
+  
+  h6,
+  .h6 {
+    font-size: 18px;
+  }
+  
+  .bodytext-xl {
+    font-size: 20px;
+  }
+  
+  .bodytext-l {
+    font-size: 18px;
+  }
+  
+  .bodytext {
+    font-size: 16px;
+  }
+  
+  .bodytext-s {
+    font-size: 14px;
+  }
+  
+  .bodytext-xs {
+    font-size: 12px;
+  }
+  
+  .bodytext-xxs {
+    font-size: 10px;
+  }
+}

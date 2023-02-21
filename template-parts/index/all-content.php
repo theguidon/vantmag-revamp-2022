@@ -54,6 +54,12 @@
       <?php } ?>
     </div>
 
+    <select id="tabs-mobile" name="tabs-mobile">
+      <?php for ($i = 0; $i < count($tabs); $i++) { ?>
+        <option value="<?php echo $tabs[$i][1] ?>"><?php echo $tabs[$i][1] ?></option>
+      <?php } ?>
+    </select>
+
     <div class="heading-container">
       <?php for ($i = 0; $i < count($tabs); $i++) { ?>
         <h3
