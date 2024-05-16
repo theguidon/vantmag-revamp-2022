@@ -204,10 +204,20 @@
     width: 100%;
     text-align: center;
     font-size: 12px;
+    font-family: Roboto, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     color: white;
 
     display: grid;
+  }
+
+  #index #all-content #tabs-mobile * {
+    display: block;
+    margin: 10px 24px;
+    padding: 10px 24px;
+
+    font-family: Roboto, sans-serif;
+    width: unset;
   }
 }
