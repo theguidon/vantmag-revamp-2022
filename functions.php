@@ -32,6 +32,7 @@ function vant_register_scripts() {
   wp_enqueue_script('jquery', get_template_directory_uri() . 'assets/js/jquery-3.6.3.min.js', array(), $version);
 
   wp_enqueue_script('scripts-index', get_template_directory_uri() . '/assets/js/index.js', array(), $version);
+  wp_enqueue_script('scripts-header', get_template_directory_uri() . '/assets/js/header.js', array('jquery'), $version);
 }
 
 add_action('wp_enqueue_scripts', 'vant_register_scripts');

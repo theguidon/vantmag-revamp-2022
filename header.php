@@ -45,7 +45,12 @@
     ?>
   </nav>
 
-  <form class="search-bar-container">
+  <div
+    id="search-bg-tint"
+    onclick="vant_toggle_search()"
+  ></div>
+
+  <form id="search-bar-container">
     <div class="search-field">
       <svg
         viewBox="0 0 24 25"

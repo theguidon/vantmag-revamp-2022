@@ -1,7 +1,10 @@
-header .header {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 10;
 }
 
 header .header-top {
@@ -10,12 +13,15 @@ header .header-top {
   align-items: center;
   justify-content: center;
 
+  position: relative;
+  z-index: 12;
+
   height: 90px;
 }
 
 header .header-top .logo {
   display: block;
-  height: 80px;
+  height: 72px;
 }
 
 header .header-top .logo img {
@@ -31,6 +37,8 @@ header nav {
 
   min-height: 48px;
   overflow-x: auto;
+  position: relative;
+  z-index: 12;
 
   padding: 0 16px;
   -ms-overflow-style: none;  /* IE and Edge */
@@ -95,18 +103,52 @@ header nav .nav-list .search-icon {
 
 
 
-header .search-bar-container {
-  background-color: var(--vantage-purple-light);
+header #search-bg-tint {
+  opacity: 0;
+  pointer-events: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  transition: 0.3s;
 }
 
-header .search-bar-container svg {
+header #search-bg-tint.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+header #search-bar-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: var(--vantage-purple-light);
+
+  transform: translate(0, -100%);
+  transition: 0.3s;
+
+  z-index: 11;
+}
+
+header #search-bar-container.active {
+  transform: translate(0, 0);
+}
+
+header #search-bar-container svg {
   color: var(--vantage-purple);
 
   width: 24px;
   height: 24px;
 }
 
-header .search-bar-container {
+header #search-bar-container {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -114,7 +156,7 @@ header .search-bar-container {
   padding: 32px 24px;
 }
 
-header .search-bar-container .search-field {
+header #search-bar-container .search-field {
   background-color: white;
   display: flex;
   flex-flow: row nowrap;
@@ -127,18 +169,18 @@ header .search-bar-container .search-field {
   max-width: 1100px;
 }
 
-header .search-bar-container .search-field input {
+header #search-bar-container .search-field input {
   flex-grow: 1;
   border: none;
 
   font-size: var(--body-l-font-size);
 }
 
-header .search-bar-container .search-field input::placeholder {
+header #search-bar-container .search-field input::placeholder {
   color: #6A757C;
 }
 
-header .search-bar-container .search-field input:focus {
+header #search-bar-container .search-field input:focus {
   outline: none;
 }
 
