@@ -12,7 +12,7 @@
   <!-- Custom CSS -->
   <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
   <link rel="pingback" href="<?php bloginfo('pingback_url');?>" />
-  <!-- <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri() . "/assets/images/logo_blue.png" ?>" /> -->
+  <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri() . "/assets/images/EmblemBlue.png" ?>" />
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

@@ -76,7 +76,7 @@ header nav .nav-list li a {
   text-transform: uppercase;
 }
 
-header nav .nav-list li:not(:last-child)::after {
+header nav .nav-list li:not(:last-of-type)::after {
   display: inline-block;
   content: "•";
   font-weight: bold;
@@ -98,7 +98,7 @@ header nav .nav-list .search-icon {
   width: 28px;
   height: 28px;
 
-  margin-left: min(24px, auto);
+  /* margin-left: 20px; */
 }
 
 
