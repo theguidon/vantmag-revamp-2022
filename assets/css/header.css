@@ -34,7 +34,7 @@ header .header-mobile .menu-icon.active {
 }
 
 header .header-mobile .logo {
-  height: 125%;
+  height: 32px;
 }
 
 header .header-mobile .logo img {
@@ -61,7 +61,7 @@ header .header-top {
 
 header .header-top .logo {
   display: block;
-  height: 72px;
+  height: 50px;
 }
 
 header .header-top .logo img {

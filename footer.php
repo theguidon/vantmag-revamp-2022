@@ -1,58 +1,118 @@
-<footer>
-    <div class="footer-container">
-      
-      <div class="left-flex">
-        <div class="footer-title">
-          <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/LongFormWhite.png" alt="VantMag Logo"/></a>
-        </div>
-        <p>© The GUIDON 2023. All rights reserved.</p>
-        <p>The GUIDON is the official publication of Ateneo de Manila University.</p>
-        <div class="socialmedia-icons">
-          <a href="https://www.facebook.com/TheGUIDON" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/facebook.svg" alt="VantMag Logo"/></a>
-          <a href="https://twitter.com/TheGUIDON" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/twitter.svg" alt="VantMag Logo"/></a>
-          <a href="https://www.instagram.com/theguidon/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/instagram.svg" alt="VantMag Logo"/></a>
-          <a href="https://open.spotify.com/show/0t2PxYpSft6HfoPHibwAvT" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/spotify.svg" alt="VantMag Logo"/></a>
-          <a href="https://www.youtube.com/@TheGuidon" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/youtube.svg" alt="VantMag Logo"/></a>
-        </div>
-      </div>
-      
-      <div class="right-flex">
-        <div class="div2">  
-          <b><p class="category-title">CATEGORIES</p></b>
-        </div>
+<?php
+// get the latest article
 
-        <ul class="grid-container">
-          <li class="grid-item">
-            <a href="#">TV & FILM</a>
-          </li>
-          <li class="grid-item"> 
-            <a href="#">FOOD</a>
-          </li>
-          <li class="grid-item">
-            <a href="#">THEATRE & ARTS</a>
-          </li>  
-          <li class="grid-item">
-            <a href="#">MUSIC</a>
-          </li>
-          <li class="grid-item">
-            <a href="#">HYPE</a>
-          </li>
-          <li class="grid-item">
-            <a href="#">HUB</a>
-          </li>
-          <li class="grid-item">
-            <a href="#">VANTAGE</a>
-          </li>
-          <li class="grid-item">
-            <a href="#">EXPOSE</a>
-          </li>
-          <li class="grid-item">
-            <a href="#">ABOUT</a>
-          </li>
-        </ul>
-      </div>
-        
+// get the year published of the latest article
+
+// update
+
+$year = 2024;
+?>
+
+<footer>
+  <div class="left-half">
+    <a class="logo" href="<?php echo home_url("/") ?>">
+      <img
+        src="<?php echo get_template_directory_uri() ?>/assets/images/logos/LongFormVantageMagazine.svg"
+        alt="Vantage Magazine"
+      />
+    </a>
+
+    <p class="desc">
+      We are The GUIDON's online magazine, a publication geared towards campus culture and the people who make it.
+      <br /><br />
+      © The GUIDON <?php echo $year ?>. All rights reserved.
+    </p>
+
+    <div class="sm-icons">
+      <a
+        href="https://www.facebook.com/TheGUIDON"
+        target="_blank"
+      ><img
+          src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/facebook.svg"
+          alt="Facebook"
+      /></a>
+
+      <a
+        href="https://twitter.com/TheGUIDON"
+        target="_blank"
+      ><img
+          src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/twitter.svg"
+          alt="Twitter"
+      /></a>
+
+      <a
+        href="https://www.instagram.com/theguidon/"
+        target="_blank"
+      ><img
+          src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/instagram.svg"
+          alt="Instagram"
+      /></a>
+
+      <a
+        href="https://open.spotify.com/show/0t2PxYpSft6HfoPHibwAvT"
+        target="_blank"
+      ><img
+          src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/spotify.svg"
+          alt="Spotify"
+      /></a>
+
+      <a
+        href="https://www.youtube.com/@TheGuidon"
+        target="_blank"
+      ><img
+          src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/youtube.svg"
+          alt="YouTube"
+      /></a>
     </div>
+  </div>
+
+  <div class="right-half">
+    <div class="more">
+      <p class="heading">More from The GUIDON</p>
+      <a
+        href="https://theguidon.com"
+        target="_blank"
+      >The GUIDON Main</a>
+      <a
+        href="https://interactive.theguidon.com"
+        target="_blank"
+      >The GUIDON Interactive</a>
+      <a
+        href="https://archives.theguidon.com"
+        target="_blank"
+      >The GUIDON Archives</a>
+    </div>
+
+    <div class="categories">
+      <p class="heading">Categories</p>
+
+      <div class="categs">
+        <?php
+        $categs = array(
+          'tv-and-film',
+          'food',
+          'theater-and-the-arts',
+          'music',
+          'hype',
+          'hub',
+          'vantage-point',
+          'expose',
+        );
+
+        for ($i = 0; $i < count($categs); $i++) {
+          $term = null;
+          if ($i != 6)
+            $term = get_term_by('slug', $categs[$i], 'category');
+          else
+            $term = get_term_by('slug', $categs[$i], 'post_tag');
+
+          get_template_part('templates/chip', null, array('term' => $term));
+        }
+        ?>
+    </div>
+  </div>
 </footer>
-  </body>
+
+</body>
+
 </html>
