@@ -8,6 +8,12 @@
   font-family: Roboto, sans-serif;
 }
 
+html.no-scroll,
+body.no-scroll {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 :root {
   --vantage-purple-light: #dddffe;
   --vantage-purple: #5d61ba;
@@ -221,6 +227,21 @@ h6,
 }
 
 @media screen and (max-width: 576px) {
+  :root {
+    --h1-font-size: 40px;
+    --h2-font-size: 32px;
+    --h3-font-size: 24px;
+    --h4-font-size: 22px;
+    --h5-font-size: 20px;
+    --h6-font-size: 18px;
+  
+    --body-xl-font-size: 20px;
+    --body-l-font-size: 18px;
+    --body-s-font-size: 14px;
+    --body-xs-font-size: 12px;
+    --body-xxs-font-size: 10px;
+  }
+
   h1,
   .h1 {
     font-size: 40px;
