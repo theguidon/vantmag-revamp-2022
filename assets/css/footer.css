@@ -5,6 +5,7 @@ footer {
   align-items: center;
 
   padding: 60px 120px;
+  margin-top: auto;
   
   background-color: var(--vantage-purple);
   color: white;
