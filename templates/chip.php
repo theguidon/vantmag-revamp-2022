@@ -7,7 +7,7 @@ if (in_array($args['term']->slug, array('expose', 'food', 'hub', 'hype', 'music'
 }
 ?>
 
-<div
+<a
   class="chip"
   style="background-color: <?php echo vant_get_color($rev_name) ?>"
   href="<?php echo get_term_link($args['term']) ?>"
@@ -22,4 +22,4 @@ if (in_array($args['term']->slug, array('expose', 'food', 'hub', 'hype', 'music'
   }
   echo $rev_name;
   ?>
-</div>
+</a>
