@@ -1,13 +1,3 @@
-<?php
-// get the latest article
-
-// get the year published of the latest article
-
-// update
-
-$year = 2024;
-?>
-
 <footer>
   <div class="left-half">
     <a class="logo" href="<?php echo home_url("/") ?>">
@@ -20,7 +10,7 @@ $year = 2024;
     <p class="desc">
       We are The GUIDON's online magazine, a publication geared towards campus culture and the people who make it.
       <br /><br />
-      © The GUIDON <?php echo $year ?>. All rights reserved.
+      © The GUIDON <?php echo get_the_date("Y") ?>. All rights reserved.
     </p>
 
     <div class="sm-icons">
