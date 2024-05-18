@@ -1,0 +1,50 @@
+.categ-hero {
+  display: grid;
+  grid-template-columns: 4fr 5fr;
+  align-items: center;
+
+  position: relative;
+}
+
+.categ-hero .bg-transparent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  
+  opacity: 20%;
+  border-bottom-right-radius: 32px;
+}
+
+.categ-hero .bookmark {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: 24px;
+  align-self: stretch;
+  z-index: 2;
+
+  padding: 40px 90px 40px 120px;
+  border-bottom-right-radius: 32px;
+}
+
+.categ-hero .bookmark img {
+  height: 72px;
+}
+
+.categ-hero .name {
+  font-size: 72px;
+  color: white;
+}
+
+.categ-hero .desc {
+  position: relative;
+  z-index: 2;
+
+  padding: 60px 120px 60px 80px;
+
+  font-weight: 500;
+  font-size: var(--body-xl-font-size);
+}
