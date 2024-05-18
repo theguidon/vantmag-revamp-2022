@@ -53,31 +53,37 @@ body {
 
 h1,
 .h1 {
+  font-family: "Calluna";
   font-size: 112px;
 }
 
 h2,
 .h2 {
+  font-family: "Calluna";
   font-size: 72px;
 }
 
 h3,
 .h3 {
+  font-family: "Calluna";
   font-size: 48px;
 }
 
 h4,
 .h4 {
+  font-family: "Calluna";
   font-size: 32px;
 }
 
 h5,
 .h5 {
+  font-family: "Calluna";
   font-size: 24px;
 }
 
 h6,
 .h6 {
+  font-family: "Calluna";
   font-size: 20px;
 }
 
@@ -212,6 +218,11 @@ h6,
   flex-grow: 1;
   height: 1px;
   background-color: black;
+}
+
+/* layouts */
+.general-container {
+  padding: 0 120px;
 }
 
 @media screen and (max-width: 1200px) {

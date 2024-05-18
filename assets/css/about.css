@@ -1,0 +1,33 @@
+#about {
+  padding: 64px 0;
+  background: rgba(221, 223, 254, 0.80);
+}
+
+#about h3 .highlight {
+  background-color: #C9CBFF;
+  font-family: inherit;
+}
+
+#about hr {
+  margin: 28px 0;
+  border: 1px solid #7C7C7C;
+}
+
+#about .desc-chips-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 64px;
+}
+
+#about .desc-chips-container .categories {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-content: flex-start;
+  row-gap: 12px;
+  column-gap: 12px;
+}
+
+#about .desc-chips-container .writeup p {
+  font-size: var(--body-xl-font-size);
+}
