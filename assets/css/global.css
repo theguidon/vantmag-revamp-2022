@@ -167,10 +167,21 @@ h6,
   height: 16px;
 }
 
+/* grid */
+.articles-grid {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
 /* article */
 .article {
   display: flex;
   flex-flow: column nowrap;
+
+  row-gap: 24px;
 
   text-decoration: none;
   color: black;
@@ -240,6 +251,20 @@ h6,
 .article .date {
   font-size: var(--body-s-font-size);
   color: #737373;
+}
+
+#load-more {
+  background-color: var(--vantage-purple-light);
+  padding: 6px 64px;
+  border: none;
+  border-radius: 16px;
+  display: block;
+  cursor: pointer;
+
+  color: var(--vantage-purple);
+  font-size: var(--body-s-font-size);
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 /* heading container */

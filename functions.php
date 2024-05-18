@@ -1,5 +1,7 @@
 <?php
 
+include 'functions/ajax.php';
+
 /**
  * Main CSS
  */
@@ -31,12 +33,22 @@ add_action('wp_enqueue_scripts', 'vant_register_styles');
  * Main scripts
  */
 function vant_register_scripts() {
+  global $wp_query;
   $version = wp_get_theme()->get('Version');
 
   wp_enqueue_script('jquery', get_template_directory_uri() . 'assets/js/jquery-3.6.3.min.js', array(), $version);
 
   wp_enqueue_script('scripts-index', get_template_directory_uri() . '/assets/js/index.js', array(), $version);
   wp_enqueue_script('scripts-header', get_template_directory_uri() . '/assets/js/header.js', array('jquery'), $version);
+
+  wp_register_script('scripts-loadmore', get_template_directory_uri() . '/assets/js/loadmore.js', array('jquery'), $version);
+  wp_localize_script('scripts-loadmore', 'vant_loadmore_params', array(
+      'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php',
+      'posts' => json_encode($wp_query->query_vars),
+      'current_page' => get_query_var('paged') ? get_query_var('paged') : 2,
+      // 'max_page' => $wp_query->max_num_pages,
+  ));
+  wp_enqueue_script('scripts-loadmore');
 }
 
 add_action('wp_enqueue_scripts', 'vant_register_scripts');

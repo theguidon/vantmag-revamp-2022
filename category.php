@@ -12,6 +12,11 @@ $has_icon = false;
 if (in_array($categ->slug, array('expose', 'food', 'hub', 'hype', 'music', 'theater-and-the-arts', 'tv-and-film', 'vantage-point'))) {
   $has_icon = true;
 }
+
+global $wp_query;
+$wp_query->set('posts_per_page', 6);
+$wp_query->set('offset', 3);
+$wp_query->query($wp_query->query_vars);
 ?>
 
 <section
@@ -93,6 +98,35 @@ if (in_array($categ->slug, array('expose', 'food', 'hub', 'hype', 'music', 'thea
         </div>
       </a>
 
+    <?php
+    }
+    ?>
+  </div>
+
+  <div class="all-articles-container">
+    <div class="heading-container">
+      <h3>All Articles</h3>
+      <div class="line"></div>
+    </div>
+
+    <div class="articles-grid">
+      <?php
+      while ($wp_query->have_posts()) {
+        $wp_query->the_post();
+        get_template_part('templates/article-card');
+      }
+      ?>
+    </div>
+
+    <?php
+    if ($wp_query->max_num_pages > 1) {
+    ?>
+      <button
+        id="load-more"
+        class="btn"
+      >
+        Show me more
+      </button>
     <?php
     }
     ?>
