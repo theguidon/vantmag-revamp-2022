@@ -1,10 +1,10 @@
 /* index */
 #index {
-  padding: 56px 60px 80px;
+  /* padding: 56px 60px 80px;
   margin: 0 auto;
 
   width: 100%;
-  max-width: 1600px;
+  max-width: 1600px; */
 }
 
 @media screen and (max-width: 1200px) {

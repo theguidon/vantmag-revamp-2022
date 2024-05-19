@@ -1,77 +1,80 @@
 /* latest article */
-#index #latest #latest-article {
-  padding: 100px 80px;
-  min-height: 480px;
-
-  background-position: center;
-  background-size: cover;
-
-  position: relative;
+#index #hero {
+  margin: 0 0 40px;
 }
 
-#index #latest #latest-article .thumbnail {
+#index #hero .article {
+  position: relative;
+  min-height: 500px;
+  padding: 120px 90px;
+
+  color: white;
+
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 16px;
+  justify-content: center;
+}
+
+#index #hero .article .thumbnail-container {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
+  bottom: 0;
   height: 100%;
 
-  z-index: -1;
+  border-radius: 0;
+  z-index: 1;
 }
 
-#index #latest #latest-article .chip {
-  box-shadow: 0px 0px 50px 0px #00000099;
-  margin: 0 0 16px;
+#index #hero .article > *:not(.thumbnail-container) {
+  z-index: 2;
+  /* text-shadow: 0px 0px 50px #00000099; */
 }
 
-#index #latest #latest-article .title {
-  margin: 0 0 16px;
-
-  color: white;
-  text-shadow: 0px 0px 50px #00000099;
-  font-family: Calluna, serif;
+#index #hero .article .title {
+  font-size: var(--h2-font-size);
+  font-family: "Calluna";
 }
 
-#index #latest #latest-article .author-info {
+#index #hero .article .author-info {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   column-gap: 24px;
-
-  color: white;
 }
 
-#index #latest #latest-article .author-info .icon {
+#index #hero .article .author-info .icon {
   width: 64px;
   height: 64px;
   border-radius: 64px;
 
   object-fit: cover;
   object-position: center;
-
-  box-shadow: 0px 0px 50px 0px #00000099;
 }
 
-#index #latest #latest-article .author-info .author {
-  color: white;
-  text-decoration: none;
+#index #hero .article .author {
   font-weight: bold;
-  margin: 0 0 4px;
 
-  text-shadow: 0px 0px 50px #00000099;
+  margin: 0 0 2px;
 }
 
-#index #latest #latest-article .author-info .date {
-  text-shadow: 0px 0px 50px #00000099;
+#index #hero .article .date {
+  color: white;
+  text-transform: unset;
 }
+
 
 /* latest content */
-#index #latest #latest-content {
-  margin: 40px 0 0;
+#index .general-container {
+  padding: 0 64px;
+}
 
+#index #latest {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(6, auto);
   column-gap: 40px;
   row-gap: 24px;
   grid-template-areas:
@@ -83,129 +86,58 @@
     "a0 a2 a5";
 }
 
-#index #latest #latest-content .article {
-  display: grid;
-  height: 100%;
-
-  word-break: break-word;
+#index #latest .article:first-of-type .thumbnail-container,
+#index #latest .article:nth-of-type(2) .thumbnail-container,
+#index #latest .article:nth-of-type(3) .thumbnail-container {
+  height: 200px;
 }
 
-#index #latest #latest-content .article:first-of-type {
-  grid-template-rows: repeat(2, 1fr);
-  row-gap: 24px;
+#index #latest .article:nth-of-type(2) .thumbnail-container,
+#index #latest .article:nth-of-type(3) .thumbnail-container {
+  width: 187px;
 }
 
-#index #latest #latest-content .article:first-of-type .thumbnail-container,
-#index #latest #latest-content .article:nth-of-type(2) .thumbnail-container,
-#index #latest #latest-content .article:nth-of-type(3) .thumbnail-container {
-  max-height: 200px;
+#index #latest .article:nth-of-type(4) .thumbnail-container,
+#index #latest .article:nth-of-type(5) .thumbnail-container,
+#index #latest .article:nth-of-type(6) .thumbnail-container {
+  width: 132px;
+  height: 132px;
 }
 
-#index #latest #latest-content .article:not(:first-of-type) {
-  grid-template-columns: 1fr 1fr;
+#index #latest .article:not(:first-of-type) {
+  flex-flow: row nowrap;
   column-gap: 32px;
 }
 
-#index #latest #latest-content .article:nth-of-type(4),
-#index #latest #latest-content .article:nth-of-type(5),
-#index #latest #latest-content .article:nth-of-type(6) {
-  grid-template-columns: 1fr 2fr;
-  max-height: 132px;
+#index #latest .article:not(:first-of-type) .excerpt {
+  display: none;
 }
 
-#index #latest #latest-content .article .thumbnail-container {
-  width: 100%;
-  height: 100%;
+#index #latest .article .authors {
+  margin-top: 0;
 }
 
-#index #latest #latest-content .article:nth-of-type(2), 
-#index #latest #latest-content .article:nth-of-type(3) {
-  max-height: 200px;
-}
-
-#index #latest #latest-content .article .chip {
-  margin: 0 0 8px;
-}
-
-#index #latest #latest-content .article .title {
-  margin: 0 0 18px;
-}
-
-#index #latest #latest-content .article .author {
-  color: black;
-
-  margin: auto 0 0;
-}
-
-#index #latest #latest-content .article .article-details {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-start;
-}
-
-#index #latest #latest-content .article .excerpt {
-  margin: 0 0 8px;
-}
 
 @media screen and (max-width: 1200px) {
-
+  #index .general-container {
+    padding: 0 52px;
+  }
 }
 
 @media screen and (max-width: 992px) {
-  
+  #index .general-container {
+    padding: 0 40px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  
+  #index .general-container {
+    padding: 0 28px;
+  }
 }
 
 @media screen and (max-width: 576px) {
-  #index #latest #latest-article {
-    padding: 40px 20px;
-    min-height: 325px;
-    
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-  }
-
-  #index #latest #latest-article .author {
-    font-size: 16px;
-  }
-
-  #index #latest #latest-content {
-    margin: 20px 0 0;
-
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas:
-      "a0"
-      "a1"
-      "a2";
-  }
-
-  #index #latest #latest-content > :not(:nth-of-type(1)):not(:nth-of-type(2)):not(:nth-of-type(3)) {
-    display: none;
-  }
-
-  #index #latest #latest-content > :nth-of-type(1) .excerpt {
-    display: none;
-  }
-
-  #index .article {
-    grid-template-rows: 1fr !important;
-    grid-template-columns: 1fr 2fr !important;
-    column-gap: 20px !important;
-
-    /* max-height: 140px; */
-  }
-
-  #index .article .article-details {
-    display: block;
-  }
-
-  #index .article .thumbnail-container {
-    min-height: 108px;
-    max-height: 140px !important;
+  #index .general-container {
+    padding: 0 16px;
   }
 }

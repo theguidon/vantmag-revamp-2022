@@ -17,7 +17,11 @@ function vant_loadmore_ajax_handler() {
   if (have_posts()) {
     while (have_posts()) {
       the_post();
-      get_template_part('templates/article-card');
+
+      get_template_part('templates/article-card', null, array(
+        'current_post' => $post,
+        'hide_chip' => true,
+      ));
     }
   }
   die;

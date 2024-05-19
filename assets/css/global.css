@@ -194,8 +194,9 @@ h6,
   flex-flow: column nowrap;
 }
 
-/* .article .chip {
-} */
+.article .chip {
+  margin: 0 0 8px;
+}
 
 .article .title {
   font-weight: bold;
@@ -272,6 +273,8 @@ h6,
 /* layouts */
 .general-container {
   padding: 0 120px;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 @media screen and (max-width: 1200px) {
