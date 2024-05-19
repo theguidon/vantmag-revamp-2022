@@ -25,17 +25,18 @@
   column-gap: 24px;
   align-self: stretch;
   z-index: 2;
+  justify-content: center;
 
-  padding: 40px 90px 40px 120px;
+  padding: 40px 80px;
   border-bottom-right-radius: 32px;
 }
 
 .categ-hero .bookmark img {
-  height: 72px;
+  height: var(--h2-font-size);
 }
 
-.categ-hero .name {
-  font-size: 72px;
+.categ-hero .bookmark .name {
+  /* font-size: var(--h2-font-size); */
   color: white;
 }
 
@@ -99,9 +100,28 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .categ-hero .bookmark {
+    padding: 32px 68px;
+  }
+
+  .categ-hero .desc {
+    padding: 48px 96px 48px 64px;
+  }
+
+  .categ-hero .bookmark img {
+    height: var(--h3-font-size);
+  }
+
+  .categ-hero .bookmark .name {
+    font-size: var(--h3-font-size);
+  }
+  
   .categ-container {
     padding-top: 40px;
     padding-bottom: 68px;
+  }
+
+  .categ-container .latest-container {
     margin: 0 0 64px;
   }
 
@@ -115,9 +135,20 @@
 }
 
 @media screen and (max-width: 992px) {
+  .categ-hero .bookmark {
+    padding: 24px 56px;
+  }
+
+  .categ-hero .desc {
+    padding: 40px 72px 40px 48px;
+  }
+  
   .categ-container {
     padding-top: 32px;
     padding-bottom: 56px;
+  }
+  
+  .categ-container .latest-container {
     margin: 0 0 56px;
   }
 
@@ -127,6 +158,14 @@
 }
 
 @media screen and (max-width: 768px) {
+  .categ-hero .bookmark {
+    padding: 20px 44px;
+  }
+
+  .categ-hero .desc {
+    padding: 32px 48px 32px 36px;
+  }
+
   .categ-container {
     padding-top: 28px;
     padding-bottom: 48px;
@@ -165,6 +204,36 @@
 }
 
 @media screen and (max-width: 576px) {
+  .categ-hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+  }
+
+  .categ-hero .bg-transparent {
+    border-radius: 0;
+  }
+
+  .categ-hero .bookmark {
+    padding: 16px 32px;
+    justify-content: center;
+    column-gap: 8px;
+
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+
+  .categ-hero .bookmark img {
+    height: var(--h2-font-size);
+  }
+
+  .categ-hero .bookmark .name {
+    font-size: var(--h2-font-size);
+  }
+
+  .categ-hero .desc {
+    padding: 24px;
+  }
+
   .categ-container {
     padding-top: 24px;
     padding-bottom: 40px;
@@ -190,7 +259,7 @@
   
   .categ-container .latest-container .article:first-of-type .title {
     margin: 0 0 4px;
-    font-size: var(--body-s-font-size);
+    font-size: var(--body-font-size);
   }
 
   .categ-container .latest-container .article:first-of-type .excerpt {

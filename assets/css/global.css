@@ -40,6 +40,7 @@ body.no-scroll {
 
   --body-xl-font-size: 20px;
   --body-l-font-size: 18px;
+  --body-font-size: 16px;
   --body-s-font-size: 14px;
   --body-xs-font-size: 12px;
   --body-xxs-font-size: 10px;
@@ -329,6 +330,7 @@ h6,
   
     --body-xl-font-size: 20px;
     --body-l-font-size: 18px;
+    --body-font-size: 16px;
     --body-s-font-size: 14px;
     --body-xs-font-size: 12px;
     --body-xxs-font-size: 10px;
@@ -376,7 +378,7 @@ h6,
 
   .article .title {
     margin: 0 0 4px;
-    font-size: var(--body-s-font-size);
+    font-size: var(--body-font-size);
   }
 
   .article .excerpt {
@@ -389,12 +391,10 @@ h6,
 
   .article .authors {
     display: none;
-    /* font-size: var(--body-xs-font-size); */
   }
 
   .article .date {
     display: none;
-    /* font-size: var(--body-xs-font-size); */
   }
 
   .article .authors-date {

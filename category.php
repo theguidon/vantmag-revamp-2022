@@ -41,9 +41,9 @@ $wp_query->query($wp_query->query_vars);
     }
     ?>
 
-    <h1 class="name">
+    <h2 class="name">
       <?php echo vant_get_categ_tag_name($categ->name) ?>
-    </h1>
+    </h2>
   </div>
 
   <p class="desc">
