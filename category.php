@@ -95,6 +95,17 @@ $wp_query->query($wp_query->query_vars);
             ?>
           </p>
           <p class="date"><?php echo get_the_date() ?></p>
+          <p class="authors-date">
+            <strong>
+              By 
+                <?php
+                if (function_exists('coauthors_posts_links'))
+                  coauthors();
+                else
+                  the_author();
+                ?>
+            </strong> | <?php echo get_the_date() ?>
+          </p>
         </div>
       </a>
 

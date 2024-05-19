@@ -80,8 +80,8 @@
 }
 
 .categ-container .latest-container .article:not(:first-of-type) {
-  display: grid;
-  grid-template-columns: auto 1fr;
+  display: flex;
+  flex-flow: row nowrap;
   column-gap: 24px;
 }
 
@@ -99,17 +99,109 @@
 }
 
 @media screen and (max-width: 1200px) {
-  
+  .categ-container {
+    padding-top: 40px;
+    padding-bottom: 68px;
+    margin: 0 0 64px;
+  }
+
+  .categ-container .latest-container .article .authors {
+    margin: 0;
+  }
+
+  .categ-container .all-articles-container #load-more {
+    margin: 44px auto 0;
+  }
 }
 
 @media screen and (max-width: 992px) {
-  
+  .categ-container {
+    padding-top: 32px;
+    padding-bottom: 56px;
+    margin: 0 0 56px;
+  }
+
+  .categ-container .all-articles-container #load-more {
+    margin: 40px auto 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .categ-container {
+    padding-top: 28px;
+    padding-bottom: 48px;
+  }
+
+  .categ-container .latest-container {
+    grid-template-areas: "l1 l1" "l2 l3";
+    grid-template-columns: 1fr 1fr;
+
+    margin: 0 0 48px;
+  }
+
+  .categ-container .latest-container .article {
+    row-gap: 18px !important;
+  }
+
+  .categ-container .latest-container .article .authors {
+    margin: auto 0 0;
+  }
+
+  .categ-container .latest-container .article:first-of-type .thumbnail-container {
+    width: 100%;
+  }
+
+  .categ-container .latest-container .article:not(:first-of-type) {
+    flex-flow: column nowrap;
+  }
   
+  .categ-container .latest-container .article:not(:first-of-type) .thumbnail-container {
+    width: 100%;
+  }
+
+  .categ-container .all-articles-container #load-more {
+    margin: 36px auto 0;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  .categ-container {
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
+
+  .categ-container .latest-container {
+    grid-template-areas: "l1" "l2" "l3";
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+
+    margin: 0 0 40px;
+  }
+
+  .categ-container .latest-container .article {
+    flex-flow: column nowrap !important;
+    row-gap: 12px !important;
+  }
+
+  .categ-container .latest-container .article .thumbnail-container {
+    width: 100% !important;
+    height: 156px;
+  }
   
+  .categ-container .latest-container .article:first-of-type .title {
+    margin: 0 0 4px;
+    font-size: var(--body-s-font-size);
+  }
+
+  .categ-container .latest-container .article:first-of-type .excerpt {
+    margin: 0 0 4px;
+  }
+
+  .categ-container .all-articles-container .heading-container {
+    margin: 0 0 20px;
+  }
+
+  .categ-container .all-articles-container #load-more {
+    margin: 32px auto 0;
+  }
 }

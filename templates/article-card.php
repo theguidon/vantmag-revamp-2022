@@ -25,13 +25,24 @@
     <p class="excerpt"><?php echo get_the_excerpt() ?></p>
     <p class="authors">By 
       <?php
-        if (function_exists('coauthors_posts_links')) {
-          coauthors();
-        } else {
-          the_author();
-        }
+      if (function_exists('coauthors_posts_links'))
+        coauthors();
+      else
+        the_author();
       ?>
     </p>
     <p class="date"><?php echo get_the_date() ?></p>
+
+    <p class="authors-date">
+      <strong>
+        By 
+          <?php
+          if (function_exists('coauthors_posts_links'))
+            coauthors();
+          else
+            the_author();
+          ?>
+      </strong> | <?php echo get_the_date() ?>
+    </p>
   </div>
 </a>
