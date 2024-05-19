@@ -17,6 +17,7 @@ jQuery(function ($) {
         type: "POST",
         beforeSend: function (xhr) {
           button.text("Loading...")
+          button.prop("disabled", true)
         },
         success: function (data) {
           if (data) {
@@ -27,6 +28,9 @@ jQuery(function ($) {
             button.remove();
           }
         },
+        complete: function (data) {
+          button.prop("disabled", false)
+        }
       });
     }
   );
