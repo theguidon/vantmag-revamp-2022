@@ -56,12 +56,12 @@ header .header-top {
   position: relative;
   z-index: 12;
 
-  height: 90px;
+  height: 64px;
 }
 
 header .header-top .logo {
   display: block;
-  height: 50px;
+  height: 36px;
 }
 
 header .header-top .logo img {
