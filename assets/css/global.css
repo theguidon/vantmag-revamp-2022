@@ -216,6 +216,9 @@ h6,
   flex-flow: column nowrap;
 }
 
+/* .article .chip {
+} */
+
 .article .title {
   font-weight: bold;
   font-size: var(--body-l-font-size);
