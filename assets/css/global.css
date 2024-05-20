@@ -234,18 +234,23 @@ h6,
   display: none;
 }
 
-#load-more {
+#load-more,
+.load-more {
   background-color: var(--vantage-purple-light);
   padding: 6px 64px;
   border: none;
   border-radius: 16px;
   display: block;
   cursor: pointer;
+  width: fit-content;
+  margin: 0 auto;
 
   color: var(--vantage-purple);
   font-size: var(--body-s-font-size);
   font-weight: bold;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
 }
 
 /* heading container */
@@ -430,7 +435,8 @@ h6,
     padding: 0 16px;
   }
   
-  #load-more {
+  #load-more,
+  .load-more {
     width: 100%;
     padding: 12px 40px;
     
