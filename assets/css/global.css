@@ -194,7 +194,7 @@ h6,
 
 .article .title {
   font-weight: bold;
-  font-size: var(--body-l-font-size);
+  font-size: var(--body-font-size);
   font-family: "Roboto", sans-serif;
 
   word-break: break-word;
@@ -272,6 +272,10 @@ h6,
 }
 
 @media screen and (max-width: 1200px) {
+  .article {
+    row-gap: 22px;
+  }
+
   .articles-grid {
     column-gap: 32px;
     row-gap: 32px;
@@ -287,6 +291,10 @@ h6,
 }
 
 @media screen and (max-width: 992px) {
+  .article {
+    row-gap: 20px;
+  }
+
   .articles-grid {
     column-gap: 28px;
     row-gap: 28px;
@@ -302,6 +310,10 @@ h6,
 }
 
 @media screen and (max-width: 768px) {
+  .article {
+    row-gap: 18px;
+  }
+
   .articles-grid {
     column-gap: 24px;
     row-gap: 24px;

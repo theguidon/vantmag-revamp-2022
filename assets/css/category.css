@@ -66,6 +66,10 @@
   margin: 0 0 72px;
 }
 
+.categ-container .latest-container .article .title {
+  font-size: var(--body-l-font-size);
+}
+
 .categ-container .latest-container .article:first-of-type {
   row-gap: 20px;
 }
@@ -255,6 +259,10 @@
   .categ-container .latest-container .article .thumbnail-container {
     width: 100% !important;
     height: 156px;
+  }
+
+  .categ-container .latest-container .article .title {
+    font-size: var(--body-font-size);
   }
   
   .categ-container .latest-container .article:first-of-type .title {

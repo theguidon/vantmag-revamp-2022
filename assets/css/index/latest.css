@@ -49,12 +49,67 @@
 
 
 @media screen and (max-width: 1200px) {
+  #index #latest {
+    margin-bottom: 68px;
+
+    column-gap: 32px;
+    row-gap: 32px;
+  }
 }
 
 @media screen and (max-width: 992px) {
+  #index #latest {
+    margin-bottom: 56px;
+    
+    column-gap: 28px;
+    row-gap: 28px;
+
+    grid-template-areas: "a0 a1 a2" "a3 a4 a5";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  #index #latest .article .thumbnail-container {
+    height: 148px !important;
+  }
+
+  #index #latest .article:nth-of-type(2),
+  #index #latest .article:nth-of-type(3) {
+    flex-flow: column nowrap;
+  }
+
+  #index #latest .article:nth-of-type(2) .thumbnail-container,
+  #index #latest .article:nth-of-type(3) .thumbnail-container {
+    width: 100%;
+  }
+
+  #index #latest .article:nth-of-type(4),
+  #index #latest .article:nth-of-type(5),
+  #index #latest .article:nth-of-type(6) {
+    flex-flow: column nowrap;
+  }
+
+  #index #latest .article:nth-of-type(4) .thumbnail-container,
+  #index #latest .article:nth-of-type(5) .thumbnail-container,
+  #index #latest .article:nth-of-type(6) .thumbnail-container {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  #index #latest {
+    margin-bottom: 48px;
+    column-gap: 24px;
+    row-gap: 24px;
+
+    grid-template-areas: "a0 a1 a2" "a3 a4 a5";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  #index #latest .article .thumbnail-container {
+    height: 124px !important;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -64,5 +119,27 @@
 
   #index #hero .article .date {
     display: block;
+  }
+
+  #index #latest {
+    margin-bottom: 40px;
+    grid-template-areas: "a0" "a1" "a2" "a3" "a4" "a5";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    row-gap: 16px;
+  }
+
+  #index #latest .article {
+    flex-flow: row nowrap !important;
+    column-gap: 16px !important;
+  }
+
+  #index #latest .article .thumbnail-container {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  #index #latest .article .excerpt {
+    display: none;
   }
 }

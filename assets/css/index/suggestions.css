@@ -5,3 +5,31 @@
 #index #suggestions .heading-container {
   margin: 0 0 24px;
 }
+
+@media screen and (max-width: 1200px) {
+  #index #suggestions {
+    margin-bottom: 68px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #index #suggestions {
+    margin-bottom: 56px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #index #suggestions {
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #index #suggestions {
+    margin-bottom: 40px;
+  }
+
+  #index #suggestions .article .excerpt {
+    display: none;
+  }
+}
