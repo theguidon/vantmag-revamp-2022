@@ -10,7 +10,7 @@
 #index #hero .article {
   position: relative;
   min-height: 500px;
-  padding: 40px;
+  padding: 40px 0;
 
   color: white;
 
@@ -83,11 +83,19 @@
   #index .general-container {
     padding: 0 52px;
   }
+
+  #index #hero .article .general-container {
+    padding: 0 56px;
+  }
 }
 
 @media screen and (max-width: 992px) {
   #index .general-container {
     padding: 0 40px;
+  }
+
+  #index #hero .article .general-container {
+    padding: 0 48px;
   }
 }
 
@@ -95,10 +103,18 @@
   #index .general-container {
     padding: 0 28px;
   }
+
+  #index #hero .article .general-container {
+    padding: 0 42px;
+  }
 }
 
 @media screen and (max-width: 576px) {
   #index .general-container {
     padding: 0 16px;
+  }
+
+  #index #hero .article .general-container {
+    padding: 0 36px;
   }
 }
