@@ -10,14 +10,22 @@
 #index #hero .article {
   position: relative;
   min-height: 500px;
-  padding: 120px 90px;
+  padding: 40px;
 
   color: white;
 
   display: flex;
   flex-flow: column nowrap;
+  justify-content: center;
+}
+
+#index #hero .article .general-container {
+  display: flex;
+  flex-flow: column nowrap;
   row-gap: 16px;
   justify-content: center;
+
+  width: 100%;
 }
 
 #index #hero .article .thumbnail-container {

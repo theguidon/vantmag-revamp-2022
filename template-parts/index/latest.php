@@ -49,37 +49,39 @@ if (function_exists('get_coauthors')) {
       ></div>
     </div>
 
-    <?php
-    get_template_part('templates/chip', null, array(
-      'term' => get_the_category($latest_query->post->ID)[0],
-      'no_anchor' => true,
-    ));
-    ?>
-
-    <h2 class="title">
-      <?php echo get_the_title($latest_query->post->ID) ?>
-    </h2>
-
-    <div class="author-info">
+    <div class="general-container">
       <?php
-      if ($icon_link) {
-      ?>
-      <img
-        class="icon"
-        src="<?php echo $icon_link ?>"
-      />
-      <?php
-      }
+      get_template_part('templates/chip', null, array(
+        'term' => get_the_category($latest_query->post->ID)[0],
+        'no_anchor' => true,
+      ));
       ?>
 
-      <div class="author-date">
-        <p class="author"><?php
-          if (function_exists('get_coauthors'))
-            echo vant_format_auths(get_coauthors());
-          else
-            echo get_the_author();
-        ?></p>
-        <p class="date">Published on <?php echo get_the_date('F j, Y', $latest_query->post->ID) ?></p>
+      <h2 class="title">
+        <?php echo get_the_title($latest_query->post->ID) ?>
+      </h2>
+
+      <div class="author-info">
+        <?php
+        if ($icon_link) {
+        ?>
+        <img
+          class="icon"
+          src="<?php echo $icon_link ?>"
+        />
+        <?php
+        }
+        ?>
+
+        <div class="author-date">
+          <p class="author"><?php
+            if (function_exists('get_coauthors'))
+              echo vant_format_auths(get_coauthors());
+            else
+              echo get_the_author();
+          ?></p>
+          <p class="date">Published on <?php echo get_the_date('F j, Y', $latest_query->post->ID) ?></p>
+        </div>
       </div>
     </div>
   </a>
