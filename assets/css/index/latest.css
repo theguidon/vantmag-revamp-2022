@@ -58,4 +58,11 @@
 }
 
 @media screen and (max-width: 576px) {
+  #index #hero .article .thumbnail-container {
+    width: 100%;
+  }
+
+  #index #hero .article .date {
+    display: block;
+  }
 }

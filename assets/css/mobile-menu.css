@@ -14,10 +14,6 @@ header #mobile-menu {
   background-color: var(--vantage-purple);
 }
 
-header #mobile-menu.active {
-  display: block;
-}
-
 header #mobile-menu .search-field {
   background-color: white;
   display: flex;
@@ -67,4 +63,22 @@ header #mobile-menu .nav-list li a {
   font-weight: bold;
   font-size: var(--body-xl-font-size);
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 1200px) {
+  
+}
+
+@media screen and (max-width: 992px) {
+  
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+
+@media screen and (max-width: 576px) {
+  header #mobile-menu.active {
+    display: block;
+  }
 }
