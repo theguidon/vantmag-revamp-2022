@@ -33,3 +33,51 @@
 #author-articles .heading-container {
   margin: 0 0 24px;
 }
+
+@media screen and (max-width: 1200px) {
+  #author-info {
+    padding: 38px 0;
+    margin: 0 0 52px;
+  }
+
+  #author-articles {
+    margin-bottom: 56px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #author-info {
+    padding: 36px 0;
+    margin: 0 0 40px;
+  }
+
+  #author-articles {
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #author-info {
+    padding: 34px 0;
+    margin: 0 0 28px;
+  }
+
+  #author-articles {
+    margin-bottom: 44px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #author-info {
+    padding: 32px 0;
+    margin: 0 0 20px;
+  }
+
+  #author-articles {
+    margin-bottom: 40px;
+  }
+
+  #author-articles .article .excerpt {
+    display: none;
+  }
+}
