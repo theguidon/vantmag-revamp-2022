@@ -11,6 +11,8 @@
       We are The GUIDON's online magazine, a publication geared towards campus culture and the people who make it.
       <br /><br />
       © The GUIDON <?php echo get_the_date("Y") ?>. All rights reserved.
+      <br />
+      Designed and developed by Digital Development 2022–2023 and 2023–2024.
     </p>
 
     <div class="sm-icons">
