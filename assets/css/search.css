@@ -111,3 +111,151 @@
 #search-results .articles-grid {
   margin: 0 0 56px;
 }
+
+@media screen and (max-width: 1200px) {
+  #search-results {
+    padding-top: 44px;
+    padding-bottom: 68px;
+  }
+
+  #search-results #search-field {
+    margin: 0 0 32px;
+  }
+
+  #search-results h4 {
+    margin: 0 0 14px;
+  }
+
+  #search-results .author-results {
+    column-gap: 30px;
+  }
+
+  #search-results .author-results .author {
+    width: 88px;
+  }
+
+  #search-results .author-results .author img {
+    width: 88px;
+    height: 88px;
+  }
+
+  #search-results .articles-grid {
+    margin: 0 0 44px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #search-results {
+    padding-top: 36px;
+    padding-bottom: 56px;
+  }
+
+  #search-results #search-field {
+    margin: 0 0 28px;
+  }
+
+  #search-results h4 {
+    margin: 0 0 12px;
+  }
+
+  #search-results .author-results {
+    column-gap: 28px;
+  }
+
+  #search-results .author-results .author {
+    width: 80px;
+  }
+
+  #search-results .author-results .author img {
+    width: 80px;
+    height: 80px;
+  }
+
+  #search-results .articles-grid {
+    margin: 0 0 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #search-results {
+    padding-top: 28px;
+    padding-bottom: 48px;
+  }
+
+  #search-results #search-field {
+    margin: 0 0 24px;
+  }
+
+  #search-results h4 {
+    margin: 0 0 10px;
+  }
+
+  #search-results .author-results {
+    column-gap: 26px;
+  }
+
+  #search-results .author-results .author {
+    width: 72px;
+  }
+
+  #search-results .author-results .author img {
+    width: 72px;
+    height: 72px;
+  }
+
+  #search-results .articles-grid {
+    margin: 0 0 36px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #search-results {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  #search-results #search-field {
+    margin: 0 0 20px;
+  }
+
+  #search-results .heading-container {
+    margin: 0 0 20px;
+  }
+
+  #search-results h4 {
+    margin: 0 0 8px;
+  }
+
+  #search-results .tag-results {
+    row-gap: 2px;
+  }
+
+  #search-results .tag-results .tag {
+    font-size: var(--body-font-size);
+  }
+
+  #search-results .author-results {
+    column-gap: 24px;
+  }
+
+  #search-results .author-results .author {
+    width: 64px;
+  }
+
+  #search-results .author-results .author img {
+    width: 64px;
+    height: 64px;
+  }
+
+  #search-results .author-results .author .name {
+    font-size: var(--body-s-font-size);
+  }
+
+  #search-results .articles-grid {
+    margin: 0 0 32px;
+  }
+
+  #search-results .articles-grid .article .excerpt {
+    display: none;
+  }
+}
