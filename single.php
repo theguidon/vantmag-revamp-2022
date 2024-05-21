@@ -138,8 +138,6 @@ $suggq = new WP_Query(array(
 
       <p class="blurb">
         <?php echo $post->post_excerpt ?>
-        <!-- <?php echo get_the_excerpt() ?> -->
-        <!-- “Add a blurb here bloop bloop bleep.” -->
       </p>
     </div>
   </div>
