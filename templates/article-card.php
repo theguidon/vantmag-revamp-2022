@@ -5,6 +5,11 @@ if (isset($args['current_post']))
   $current_post = $args['current_post'];
 else
   $current_post = $post;
+
+$hover_color = vant_get_color( vant_get_categ_tag_name(get_the_category($current_post)[0]->name) ) . '40';
+
+if ($hover_color == '#33333340')
+  $hover_color = 'var(--vantage-purple-light)';
 ?>
 
 <a
@@ -13,7 +18,7 @@ else
   style="<?php
     if (isset($args['grid_area']))
       echo 'grid-area: ' . $args['grid_area'] .';';
-  ?> --hover-color: <?php echo vant_get_color( vant_get_categ_tag_name(get_the_category($current_post)[0]->name) ) ?>30;"
+  ?> --hover-color: <?php echo $hover_color ?>;"
 >
   <div class="thumbnail-container">
     <img
