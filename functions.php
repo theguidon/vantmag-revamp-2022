@@ -29,6 +29,7 @@ function vant_register_styles() {
   wp_enqueue_style('styles-single', get_template_directory_uri() . '/assets/css/single.css', array(), $version);
   wp_enqueue_style('styles-author', get_template_directory_uri() . '/assets/css/author.css', array(), $version);
   wp_enqueue_style('styles-search', get_template_directory_uri() . '/assets/css/search.css', array(), $version);
+  wp_enqueue_style('styles-404', get_template_directory_uri() . '/assets/css/404.css', array(), $version);
 }
 
 add_action('wp_enqueue_scripts', 'vant_register_styles');
