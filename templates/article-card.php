@@ -12,8 +12,8 @@ else
   class="article"
   style="<?php
     if (isset($args['grid_area']))
-      echo 'grid-area: ' . $args['grid_area'];
-  ?>"
+      echo 'grid-area: ' . $args['grid_area'] .';';
+  ?> --hover-color: <?php echo vant_get_color( vant_get_categ_tag_name(get_the_category($current_post)[0]->name) ) ?>30;"
 >
   <div class="thumbnail-container">
     <img

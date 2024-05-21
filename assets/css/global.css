@@ -165,8 +165,8 @@ h6,
 }
 
 .article:hover {
-  background-color: var(--vantage-purple-light);
-  /* background-color: var(--active-color); */
+  /* background-color: var(--vantage-purple-light); */
+  background-color: var(--hover-color);
 }
 
 .article .thumbnail-container {
