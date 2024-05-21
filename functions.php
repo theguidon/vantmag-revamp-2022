@@ -49,7 +49,7 @@ function vant_register_scripts() {
   wp_localize_script('scripts-loadmore', 'vant_loadmore_params', array(
       'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php',
       'posts' => json_encode($wp_query->query_vars),
-      'current_page' => get_query_var('paged') ? get_query_var('paged') : 2,
+      'current_page' => get_query_var('paged') ? get_query_var('paged') : 1,
       // 'max_page' => $wp_query->max_num_pages,
   ));
   wp_enqueue_script('scripts-loadmore');

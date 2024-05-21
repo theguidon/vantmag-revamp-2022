@@ -20,7 +20,6 @@ $article_results = new WP_Query(array(
   'post_type' => 'post',
   's' => $key,
   'posts_per_page' => 6,
-  'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
 ));
 
 $has_tag_results = count($tag_results) > 0;
@@ -124,6 +123,7 @@ $has_article_results = $article_results->have_posts();
         }
         ?>
       </div>
+      <button id="load-more">Show me more</button>
     <?php
     }
     ?>

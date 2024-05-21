@@ -6,10 +6,15 @@
 function vant_loadmore_ajax_handler() {
   $args = json_decode(stripslashes($_POST['query']), true);
   $args['posts_per_page'] = 6;
-  // $args['offset'] = 3;
-  $args['offset'] = 3 + ($_POST['page'] - 1) * 6;
-  // $args['paged'] = $_POST['page'] + 1;
   $args['post_status'] = 'publish';
+
+  if (isset($_POST['from']) && $_POST['from'] == 'search') {
+    $args['s'] = $_POST['s'];
+    $args['post_type'] = 'post';
+    $args['paged'] = $_POST['page'] + 1;
+  } else {
+    $args['offset'] = 3 + ($_POST['page'] - 1) * 6;
+  }
 
   // it is always better to use WP_Query but not here
   query_posts($args);
@@ -18,10 +23,16 @@ function vant_loadmore_ajax_handler() {
     while (have_posts()) {
       the_post();
 
-      get_template_part('templates/article-card', null, array(
-        'current_post' => $post,
-        'hide_chip' => true,
-      ));
+      if (isset($_POST['from']) && $_POST['from'] == 'search') {
+        get_template_part('templates/article-card', null, array(
+          'current_post' => $post,
+        ));
+      } else {
+        get_template_part('templates/article-card', null, array(
+          'current_post' => $post,
+          'hide_chip' => true,
+        ));
+      }
     }
   }
   die;
