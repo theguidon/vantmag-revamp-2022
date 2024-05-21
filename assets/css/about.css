@@ -120,6 +120,12 @@
   grid-area: p5;
 }
 
+@media screen and (min-width: 1440px) {
+  #about .photos-container {
+    height: unset;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   #about {
     padding: 52px 0 64px;
