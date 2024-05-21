@@ -27,6 +27,7 @@ function vant_register_styles() {
 
   wp_enqueue_style('styles-single', get_template_directory_uri() . '/assets/css/single.css', array(), $version);
   wp_enqueue_style('styles-author', get_template_directory_uri() . '/assets/css/author.css', array(), $version);
+  wp_enqueue_style('styles-search', get_template_directory_uri() . '/assets/css/search.css', array(), $version);
 }
 
 add_action('wp_enqueue_scripts', 'vant_register_styles');
@@ -156,6 +157,21 @@ function vant_short_excerpt($exc, $cws = 220) {
 
   return substr($exc, 0, $cws) . "...";
 }
+
+
+/**
+ * Code for similar post titles, for author and article search results
+ * Original code from https://wordpress.stackexchange.com/questions/18703/wp-query-with-post-title-like-something
+ */
+add_filter('posts_where', 'vant_posts_where', 10, 2);
+function vant_posts_where($where, $wp_query) {
+  global $wpdb;
+  if ($main_title = $wp_query->get('main_title')) {
+    $where .= ' AND ' . $wpdb->posts . '.post_title LIKE \'' . esc_sql($wpdb->esc_like($main_title)) . '%\'';
+  }
+  return $where;
+}
+
 
 
 /**
