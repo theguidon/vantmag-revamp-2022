@@ -91,7 +91,6 @@ $wp_query->query($wp_query->query_vars);
     ?>
       <button
         id="load-more"
-        class="btn"
       >
         Show me more
       </button>
