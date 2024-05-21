@@ -90,7 +90,18 @@ $suggq = new WP_Query(array(
         echo "background-color: var(--vantage-purple-light);";
         // echo "background-image: url('" . get_template_directory_uri() . "/assets/images/vantmag_16x9.png');";
     ?>"
-  ></div>
+  >
+    <?php
+    if (has_post_thumbnail()) {
+    ?>
+      <img
+        src="<?php echo wp_get_attachment_image_src(get_post_thumbnail_id(), 'medium')[0] ?>"
+        alt="<?php the_title() ?>"
+      />
+    <?php
+    }
+    ?>
+  </div>
 
 
   <div class="bar">
