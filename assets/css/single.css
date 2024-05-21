@@ -144,10 +144,6 @@
   column-gap: 24px;
 }
 
-#article-suggested .articles-grid .article {
-  row-gap: 16px;
-}
-
 #article-suggested .articles-grid .article .thumbnail-container {
   height: 132px;
 }
