@@ -5,6 +5,7 @@ $latest_post = get_posts(array(
 ?>
 
 <footer>
+  <div class="footer-content">
   <div class="left-half">
     <a class="logo" href="<?php echo home_url("/") ?>">
       <img
@@ -108,6 +109,7 @@ $latest_post = get_posts(array(
         }
         ?>
     </div>
+  </div>
   </div>
 </footer>
 
