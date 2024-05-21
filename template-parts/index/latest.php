@@ -17,7 +17,7 @@ $icon_link = false;
 //       $cq->the_post();
 
 //       if (has_post_thumbnail($cq->post->ID))
-//         $icon_link = wp_get_attachment_image_src(get_post_thumbnail_id($cq->post->ID), 'medium')[0];
+//         $icon_link = wp_get_attachment_image_src(get_post_thumbnail_id($cq->post->ID), 'large')[0];
 //       else
 //         $icon_link = false;
 //     } else

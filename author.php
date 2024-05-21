@@ -10,7 +10,7 @@ $auth = $wp_query->get_queried_object();
     <!-- <img
       src="<?php
         if (has_post_thumbnail($auth->ID)) {
-          // echo wp_get_attachment_image_src(get_post_thumbnail_id($auth->ID), 'medium')[0];
+          // echo wp_get_attachment_image_src(get_post_thumbnail_id($auth->ID), 'large')[0];
         } else {
           // echo get_template_directory_uri() . "/assets/images/emblem_1x1.png";
         }
