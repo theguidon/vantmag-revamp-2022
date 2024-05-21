@@ -86,7 +86,15 @@
   margin: 0 0 28px;
   color: white;
   font-family: "Calluna";
-  text-decoration: none;
+}
+
+#article-info .bar .author-info .author a {
+  text-decoration-color: transparent;
+  transition: 0.2s;
+}
+
+#article-info .bar .author-info .author a:hover {
+  text-decoration-color: white;
 }
 
 #article-info .bar .author-date .date {
