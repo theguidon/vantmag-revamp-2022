@@ -1,0 +1,35 @@
+#author-info {
+  margin: 0 0 64px;
+  padding: 40px 0;
+
+  /* background-color: var(--vantage-purple-light); */
+  background-color: #E4E5FE;
+}
+
+#author-info .written {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--vantage-purple);
+
+  margin: 0 0 4px;
+}
+
+#author-info .name {
+  color: var(--vantage-purple-dark);
+  font-size: 56px;
+  font-family: "Roboto";
+
+  margin: 0 0 8px;
+}
+
+#author-info .desc {
+  max-width: 720px;
+}
+
+#author-articles {
+  margin-bottom: 64px;
+}
+
+#author-articles .heading-container {
+  margin: 0 0 24px;
+}
