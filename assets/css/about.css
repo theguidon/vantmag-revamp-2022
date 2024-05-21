@@ -13,7 +13,7 @@
 }
 
 #about hr {
-  margin: 28px 0;
+  margin: 24px 0;
   border: 1px solid #7C7C7C;
 }
 
@@ -34,8 +34,11 @@
 
 #about .desc-chips-container .writeup p {
   font-size: var(--body-xl-font-size);
-  margin: 0 0 32px;
   line-height: 140%;
+}
+
+#about .desc-chips-container .writeup p:not(:last-child) {
+  margin: 0 0 32px;
 }
 
 #about .photos-container {
@@ -71,10 +74,14 @@
 
 #about .photos-container img:first-of-type {
   grid-area: p1;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 #about .photos-container img:nth-of-type(2) {
   grid-area: p2;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 #about .photos-container img:nth-of-type(3) {
@@ -83,10 +90,14 @@
 
 #about .photos-container img:nth-of-type(4) {
   grid-area: p4;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 #about .photos-container img:nth-of-type(5) {
   grid-area: p5;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 #about .photos-container div:first-of-type {
@@ -107,4 +118,88 @@
 
 #about .photos-container div:nth-of-type(5) {
   grid-area: p5;
+}
+
+@media screen and (max-width: 1200px) {
+  #about {
+    padding: 52px 0 64px;
+  }
+
+  #about .general-container {
+    margin-bottom: 56px;
+  }
+
+  #about .photos-container {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #about {
+    padding: 40px 0 64px;
+  }
+
+  #about .general-container {
+    margin-bottom: 48px;
+  }
+
+  #about .photos-container {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #about {
+    padding: 28px 0 64px;
+  }
+
+  #about .general-container {
+    margin-bottom: 44px;
+  }
+
+  #about .desc-chips-container {
+    grid-template-columns: 1fr;
+  }
+
+  #about .desc-chips-container .categories {
+    justify-content: flex-start;
+  }
+
+  #about .photos-container {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #about {
+    padding: 16px 0 64px;
+  }
+
+  #about .general-container {
+    margin-bottom: 40px;
+  }
+
+  #about .desc-chips-container .categories {
+    display: none;
+  }
+
+  #about .photos-container {
+    height: unset;
+    padding: 0 16px;
+
+    column-gap: 12px;
+    row-gap: 12px;
+    grid-template-areas: "p1 p2" "p3 p3" "p4 p5";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 2fr 1fr;
+  }
+
+  #about .photos-container img {
+    height: 100%;
+  }
+
+  #about .photos-container > div {
+    display: none;
+    transform: translate(8px, 8px);
+  }
 }
