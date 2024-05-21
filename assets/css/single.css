@@ -110,3 +110,29 @@
 #article-content a {
   color: var(--vantage-purple);
 }
+
+/* suggested */
+#article-suggested {
+  margin-bottom: 40px;
+}
+
+#article-suggested .heading-container {
+  margin: 0 0 24px;
+}
+
+#article-suggested .articles-grid {
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 24px;
+}
+
+#article-suggested .articles-grid .article {
+  row-gap: 16px;
+}
+
+#article-suggested .articles-grid .article .thumbnail-container {
+  height: 132px;
+}
+
+#article-suggested .articles-grid .article .excerpt {
+  display: none;
+}

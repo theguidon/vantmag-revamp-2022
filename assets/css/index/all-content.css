@@ -1,5 +1,5 @@
 #index #all-content {
-  margin: 0 0 80px;
+  margin-bottom: 80px;
 }
 
 #index #all-content .heading-container {
@@ -75,7 +75,7 @@
 
 @media screen and (max-width: 1200px) {
   #index #all-content {
-    margin: 0 0 70px;
+    margin-bottom: 70px;
   }
 
   #index #all-content .heading-container {
@@ -89,7 +89,7 @@
 
 @media screen and (max-width: 992px) {
   #index #all-content {
-    margin: 0 0 60px;
+    margin-bottom: 60px;
   }
 
   #index #all-content .heading-container {
@@ -103,7 +103,7 @@
 
 @media screen and (max-width: 768px) {
   #index #all-content {
-    margin: 0 0 50px;
+    margin-bottom: 50px;
   }
 
   #index #all-content .heading-container {
@@ -117,7 +117,7 @@
 
 @media screen and (max-width: 576px) {
   #index #all-content {
-    margin: 0 0 40px;
+    margin-bottom: 40px;
   }
 
   #index #all-content .heading-container {

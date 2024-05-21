@@ -30,6 +30,12 @@ $icon_link = false;
 //     wp_reset_postdata();
 //   }
 // }
+
+
+$suggq = new WP_Query(array(
+  'category_name' => $categs[0]->name,
+  'posts_per_page' => 4,
+));
 ?>
 
 <main id="article-info">
@@ -132,7 +138,24 @@ $icon_link = false;
   <?php the_content() ?>
 </article>
 
-<section id="suggested-articles" class="articles-grid">
+<section id="article-suggested" class="general-container">
+  <div class="heading-container">
+    <h5 class="heading">You might like these!</h5>
+    <div class="line"></div>
+  </div>
+
+  <div class="articles-grid">
+    <?php
+    if ($suggq->have_posts()) {
+      while ($suggq->have_posts()) {
+        $suggq->the_post();
+        get_template_part('templates/article-card', null, array(
+          'current_post' => $suggq->post,
+        ));
+      }
+    }
+    ?>
+  </div>
 </section>
 
 <?php
