@@ -156,6 +156,16 @@ h6,
 
   text-decoration: none;
   color: black;
+
+  padding: 16px;
+  margin: -16px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.article:hover {
+  background-color: var(--vantage-purple-light);
+  /* background-color: var(--active-color); */
 }
 
 .article .thumbnail-container {
