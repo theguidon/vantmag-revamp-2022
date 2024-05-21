@@ -49,6 +49,21 @@ get_header();
   </div>
 
   <div class="photos-container">
+    <img
+      src="<?php echo get_template_directory_uri() ?>/assets/images/about/01.jpg"
+    />
+    <img
+      src="<?php echo get_template_directory_uri() ?>/assets/images/about/02.jpg"
+    />
+    <img
+      src="<?php echo get_template_directory_uri() ?>/assets/images/about/03.jpg"
+    />
+    <img
+      src="<?php echo get_template_directory_uri() ?>/assets/images/about/04.jpg"
+    />
+    <img
+      src="<?php echo get_template_directory_uri() ?>/assets/images/about/05.jpg"
+    />
   </div>
 </main>
 

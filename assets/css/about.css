@@ -3,6 +3,10 @@
   background: rgba(221, 223, 254, 0.80);
 }
 
+#about .general-container {
+  margin-bottom: 64px;
+}
+
 #about h3 .highlight {
   background-color: #C9CBFF;
   font-family: inherit;
@@ -32,4 +36,61 @@
   font-size: var(--body-xl-font-size);
   margin: 0 0 32px;
   line-height: 140%;
+}
+
+#about .photos-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "p1 p3 p4" "p2 p3 p5";
+  row-gap: 32px;
+  column-gap: 32px;
+
+  height: 600px;
+}
+
+#about .photos-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+
+  position: relative;
+}
+
+#about .photos-container img::after {
+  display: block;
+  content: "Hello world";
+  color: white;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+
+  background-color: black;
+
+  overflow: visible;
+}
+
+#about .photos-container img:first-child {
+  grid-area: p1;
+}
+
+#about .photos-container img:nth-child(2) {
+  grid-area: p2;
+}
+
+#about .photos-container img:nth-child(3) {
+  grid-area: p3;
+}
+
+#about .photos-container img:nth-child(4) {
+  grid-area: p4;
+}
+
+#about .photos-container img:nth-child(5) {
+  grid-area: p5;
 }
