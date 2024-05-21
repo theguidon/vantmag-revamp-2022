@@ -1,3 +1,9 @@
+<?php
+$latest_post = get_posts(array(
+  'numberposts' => 1,
+))[0];
+?>
+
 <footer>
   <div class="left-half">
     <a class="logo" href="<?php echo home_url("/") ?>">
@@ -10,7 +16,7 @@
     <p class="desc">
       We are The GUIDON's online magazine, a publication geared towards campus culture and the people who make it.
       <br /><br />
-      © The GUIDON <?php echo get_the_date("Y") ?>. All rights reserved.
+      © The GUIDON <?php echo get_the_date("Y", $latest_post->ID) ?>. All rights reserved.
       <br /><br />
       Designed and developed by Digital Development <span style="white-space: nowrap">2022–2023</span> and <span style="white-space: nowrap">2023–2024</span>.
     </p>
