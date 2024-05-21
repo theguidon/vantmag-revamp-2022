@@ -250,4 +250,8 @@ header #search-bar-container .search-field input:focus {
   header #search-bg-tint {
     display: none !important;
   }
+
+  header #search-bar-container .search-field input {
+    font-size: var(--body-font-size);
+  }
 }

@@ -81,4 +81,8 @@ header #mobile-menu .nav-list li a {
   header #mobile-menu.active {
     display: block;
   }
+
+  header #mobile-menu .search-field input {
+    font-size: var(--body-font-size);
+  }
 }

@@ -114,4 +114,8 @@
   #page-404 #search-field {
     margin: 0 0 24px;
   }
+
+  #page-404 #search-field input {
+    font-size: var(--body-font-size);
+  }
 }
