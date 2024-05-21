@@ -3,13 +3,22 @@
   background: rgba(221, 223, 254, 0.80);
 }
 
+#about .mobile-hero {
+  display: none;
+}
+
 #about .general-container {
   margin-bottom: 64px;
 }
 
 #about h3 .highlight {
   background-color: #C9CBFF;
-  font-family: inherit;
+  font-family: "Calluna";
+}
+
+#about h2 .highlight {
+  background-color: var(--vantage-purple);
+  font-family: "Calluna";
 }
 
 #about hr {
@@ -179,11 +188,27 @@
 
 @media screen and (max-width: 576px) {
   #about {
-    padding: 16px 0 64px;
+    padding: 0 0 64px;
+  }
+
+  #about .mobile-hero {
+    display: block;
+
+    background-position: center !important;
+    background-size: cover !important;
+    padding: 32px;
+
+    color: white;
   }
 
   #about .general-container {
+    margin-top: 20px;
     margin-bottom: 40px;
+  }
+
+  #about .general-container > h3,
+  #about .general-container > hr {
+    display: none;
   }
 
   #about .desc-chips-container .categories {
