@@ -125,9 +125,9 @@ $suggq = new WP_Query(array(
 
           <h4 class="author"><?php
             if (function_exists('get_coauthors'))
-              coauthors();
+              coauthors_posts_links();
             else
-              the_author();
+              the_author_posts_link();
           ?></h4>
 
           <p class="date">

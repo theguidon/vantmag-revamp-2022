@@ -85,6 +85,8 @@
 #article-info .bar .author-info .author {
   margin: 0 0 28px;
   color: white;
+  font-family: "Calluna";
+  text-decoration: none;
 }
 
 #article-info .bar .author-date .date {
