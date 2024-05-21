@@ -27,10 +27,11 @@ $has_author_results = $author_results->have_posts();
 $has_article_results = $article_results->have_posts();
 ?>
 
-<main id="search-results" class="general-container">
-  <?php
-  if ($has_tag_results || $has_author_results || $has_article_results) {
-  ?>
+<?php
+if ($has_tag_results || $has_author_results || $has_article_results) {
+?>
+
+  <main id="search-results" class="general-container">
     <form
       id="search-field"
       method="get"
@@ -127,12 +128,13 @@ $has_article_results = $article_results->have_posts();
     <?php
     }
     ?>
-  <?php
-  } else {
-    get_template_part('template-parts/404/content');
-  }
-  ?>
-</main>
+  </main>
+
+<?php
+} else {
+  get_template_part('template-parts/404/content');
+}
+?>
 
 <?php
 get_footer();
