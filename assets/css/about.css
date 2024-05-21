@@ -47,6 +47,7 @@
   column-gap: 32px;
 
   height: 600px;
+  overflow-x: clip;
 }
 
 #about .photos-container img {
@@ -54,43 +55,56 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+  border-radius: 4px;
 
   position: relative;
+  z-index: 1;
 }
 
-#about .photos-container img::after {
-  display: block;
-  content: "Hello world";
-  color: white;
+#about .photos-container > div {
+  border-radius: 4px;
 
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 5;
+  transform: translate(16px, 16px);
 
-  background-color: black;
-
-  overflow: visible;
+  background-color: var(--bg-color, var(--vantage-purple));
 }
 
-#about .photos-container img:first-child {
+#about .photos-container img:first-of-type {
   grid-area: p1;
 }
 
-#about .photos-container img:nth-child(2) {
+#about .photos-container img:nth-of-type(2) {
   grid-area: p2;
 }
 
-#about .photos-container img:nth-child(3) {
+#about .photos-container img:nth-of-type(3) {
   grid-area: p3;
 }
 
-#about .photos-container img:nth-child(4) {
+#about .photos-container img:nth-of-type(4) {
   grid-area: p4;
 }
 
-#about .photos-container img:nth-child(5) {
+#about .photos-container img:nth-of-type(5) {
+  grid-area: p5;
+}
+
+#about .photos-container div:first-of-type {
+  grid-area: p1;
+}
+
+#about .photos-container div:nth-of-type(2) {
+  grid-area: p2;
+}
+
+#about .photos-container div:nth-of-type(3) {
+  grid-area: p3;
+}
+
+#about .photos-container div:nth-of-type(4) {
+  grid-area: p4;
+}
+
+#about .photos-container div:nth-of-type(5) {
   grid-area: p5;
 }

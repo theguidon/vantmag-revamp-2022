@@ -64,6 +64,22 @@ get_header();
     <img
       src="<?php echo get_template_directory_uri() ?>/assets/images/about/05.jpg"
     />
+
+    <div
+      style="--bg-color: <?php echo vant_get_color('Food') ?>"
+    ></div>
+    <div
+      style="--bg-color: <?php echo vant_get_color('Hub') ?>"
+    ></div>
+    <div
+      style="--bg-color: <?php echo vant_get_color('Theater & Arts') ?>"
+    ></div>
+    <div
+      style="--bg-color: <?php echo vant_get_color('Expose') ?>"
+    ></div>
+    <div
+      style="--bg-color: <?php echo vant_get_color('Hype') ?>"
+    ></div>
   </div>
 </main>
 
