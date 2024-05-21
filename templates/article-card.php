@@ -50,7 +50,7 @@ else
       if (function_exists('coauthors_posts_links'))
         coauthors();
       else
-        get_the_author();
+        the_author();
       ?>
     </p>
     <p class="date"><?php echo get_the_date('', $current_post) ?></p>

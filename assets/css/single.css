@@ -1,0 +1,112 @@
+/* article info */
+#article-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  grid-template-areas: "title image" "bar bar";
+
+  width: 100%;
+}
+
+#article-info .title-container {
+  grid-area: title;
+  padding: 80px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 32px;
+}
+
+#article-info .title-container .title {
+  word-break: break-word;
+}
+
+#article-info .title-container .share {
+  font-size: var(--body-xl-font-size);
+  color: #A7A7A7;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  margin: 0 0 8px;
+}
+
+#article-info .title-container .socmed-icons {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 20px;
+}
+
+#article-info .title-container .socmed-icons .icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+
+  background-color: #6B6B6B;
+  mask-size: contain;
+}
+
+#article-info .featured-image-container {
+  background-size: cover;
+  background-position: center;
+}
+
+#article-info img.featured {
+  grid-area: image;
+  width: 100%;
+  height: 100%;
+  background-color: var(--vantage-purple-light);
+
+  object-fit: cover;
+  object-position: center;
+}
+
+#article-info .bar {
+  grid-area: bar;
+  background-color: var(--vantage-purple);
+
+  padding: 64px 0;
+}
+
+#article-info .bar .general-container {
+  display: grid;
+  grid-template-columns: 4fr 5fr;
+  column-gap: 24px;
+}
+
+#article-info .bar .author-info .written-by {
+  color: #F3F3F3;
+  margin: 0 0 2px;
+}
+
+#article-info .bar .author-info .author {
+  margin: 0 0 28px;
+  color: white;
+}
+
+#article-info .bar .author-date .date {
+  color: #F3F3F3;
+  text-transform: uppercase;
+}
+
+#article-info .bar .blurb {
+  font-size: var(--h3-font-size);
+  color: white;
+  text-align: left;
+  font-family: Calluna;
+}
+
+/* content */
+#article-content {
+  max-width: calc(880px + 2 * 16px);
+  padding: 40px 16px 80px;
+}
+
+#article-content p {
+  margin: 0 0 32px;
+  font-size: var(--body-xl-font-size);
+  line-height: 140%;
+}
+
+#article-content a {
+  color: var(--vantage-purple);
+}

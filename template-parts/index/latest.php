@@ -4,26 +4,26 @@ $latest_query = new WP_Query(array(
 ));
 
 $icon_link = false;
-if (function_exists('get_coauthors')) {
-  $co_authors = get_coauthors();
+// if (function_exists('get_coauthors')) {
+//   $co_authors = get_coauthors();
 
-  if (count($co_authors) == 1) {
-    $cq = new WP_Query(array(
-      'post_type' => 'guest-author',
-      's' => $co_authors[0]->display_name,
-    ));
+//   if (count($co_authors) == 1) {
+//     $cq = new WP_Query(array(
+//       'post_type' => 'guest-author',
+//       's' => $co_authors[0]->display_name,
+//     ));
 
-    if ($cq->have_posts()) {
-      $cq->the_post();
+//     if ($cq->have_posts()) {
+//       $cq->the_post();
 
-      if (has_post_thumbnail($cq->post->ID))
-        $icon_link = wp_get_attachment_image_src(get_post_thumbnail_id($cq->post->ID), 'medium')[0];
-      else
-        $icon_link = false;
-    } else
-      $icon_link = false;
-  }
-}
+//       if (has_post_thumbnail($cq->post->ID))
+//         $icon_link = wp_get_attachment_image_src(get_post_thumbnail_id($cq->post->ID), 'medium')[0];
+//       else
+//         $icon_link = false;
+//     } else
+//       $icon_link = false;
+//   }
+// }
 ?>
 
 <section id="hero">
@@ -65,10 +65,10 @@ if (function_exists('get_coauthors')) {
         <?php
         if ($icon_link) {
         ?>
-        <img
-          class="icon"
-          src="<?php echo $icon_link ?>"
-        />
+          <img
+            class="icon"
+            src="<?php echo $icon_link ?>"
+          />
         <?php
         }
         ?>
@@ -76,9 +76,9 @@ if (function_exists('get_coauthors')) {
         <div class="author-date">
           <p class="author"><?php
             if (function_exists('get_coauthors'))
-              echo vant_format_auths(get_coauthors());
+              coauthors();
             else
-              echo get_the_author();
+              the_author();
           ?></p>
           <p class="date">Published on <?php echo get_the_date('F j, Y', $latest_query->post->ID) ?></p>
         </div>
