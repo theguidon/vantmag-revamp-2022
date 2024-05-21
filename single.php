@@ -54,7 +54,8 @@ $suggq = new WP_Query(array(
       <p class="share">Share</p>
       <div class="socmed-icons">
         <a
-          href=""
+          href="http://www.facebook.com/sharer.php?u=<?php echo home_url($wp->request) ?>"
+          target="_blank"
           class="icon"
           style="
             -webkit-mask: url('<?php echo get_template_directory_uri() ?>/assets/images/icons/facebook.svg') no-repeat center;
@@ -62,19 +63,12 @@ $suggq = new WP_Query(array(
           "
         ></a>
         <a
-          href=""
+          href="http://x.com/share?url=<?php echo home_url($wp->request) ?>&text=<?php echo get_the_title() ?>"
+          target="_blank"
           class="icon"
           style="
             -webkit-mask: url('<?php echo get_template_directory_uri() ?>/assets/images/icons/twitter.svg') no-repeat center;
             mask: url('<?php echo get_template_directory_uri() ?>/assets/images/icons/twitter.svg') no-repeat center;
-          "
-        ></a>
-        <a
-          href=""
-          class="icon"
-          style="
-            -webkit-mask: url('<?php echo get_template_directory_uri() ?>/assets/images/icons/instagram.svg') no-repeat center;
-            mask: url('<?php echo get_template_directory_uri() ?>/assets/images/icons/instagram.svg') no-repeat center;
           "
         ></a>
       </div>
