@@ -50,10 +50,18 @@
 
   <?php
   for ($i = 0; $i < count($categs); $i++) {
-    $categ_query = new WP_Query(array(
-      'category_name' => $categs[$i],
-      'posts_per_page' => 9,
-    ));
+    $categ_query = null;
+    if ($i == 6) {
+      $categ_query = new WP_Query(array(
+        'tag' => $categs[$i],
+        'posts_per_page' => 9,
+      ));
+    } else {
+      $categ_query = new WP_Query(array(
+        'category_name' => $categs[$i],
+        'posts_per_page' => 9,
+      ));
+    }
   ?>
     <div
       id="<?php echo $categs[$i] ?>-tab"
