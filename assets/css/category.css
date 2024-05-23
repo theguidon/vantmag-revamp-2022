@@ -130,7 +130,7 @@
   }
 
   .categ-container .latest-container .article .authors {
-    margin: 0;
+    margin-top: 0;
   }
 
   .categ-container .all-articles-container .articles-grid {
@@ -187,7 +187,7 @@
   }
 
   .categ-container .latest-container .article .authors {
-    margin: auto 0 0;
+    margin-top: auto;
   }
 
   .categ-container .latest-container .article:first-of-type .thumbnail-container {
