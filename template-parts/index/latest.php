@@ -39,7 +39,7 @@ $icon_link = false;
     <div class="thumbnail-container">
       <div
         class="thumbnail"
-        style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url(<?php
+        style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(<?php
           if (has_post_thumbnail($latest_query->post->ID)) {
             echo wp_get_attachment_image_src(get_post_thumbnail_id($latest_query->post->ID), 'single-post-thumbnail')[0];
           } else {
