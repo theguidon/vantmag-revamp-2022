@@ -5,7 +5,8 @@
 
 .tag-container .tagged-with {
   font-size: var(--h5-font-size);
-  font-family: "Calluna";
+  font-family: "Roboto";
+  font-weight: bold;
 
   margin: 0 0 -8px;
 }
