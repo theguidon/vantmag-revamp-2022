@@ -240,6 +240,13 @@ header #search-bar-container .search-field input:focus {
 }
 
 @media screen and (max-width: 576px) {
+  body.no-scroll header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
   header .header-mobile {
     display: flex;
   }
