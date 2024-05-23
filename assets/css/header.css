@@ -108,12 +108,22 @@ header nav .nav-list li {
   align-items: center;
 }
 
+header nav .nav-list li:last-of-type {
+  margin: 0 16px 0 0;
+}
+
 header nav .nav-list li a {
   color: white;
   text-decoration: none;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+header nav .nav-list li.active a {
+  text-decoration: underline 2px solid white;
+  text-underline-offset: 4px;
+  padding: 4px 0;
 }
 
 header nav .nav-list li:not(:last-of-type)::after {
