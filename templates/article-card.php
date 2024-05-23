@@ -69,7 +69,7 @@ if ($hover_color == '#33333340')
           else
             the_author();
           ?>
-      </strong> | <?php echo get_the_date('', $current_post) ?>
+      </strong> &bull; <?php echo get_the_date('', $current_post) ?>
     </p>
   </div>
 </a>
