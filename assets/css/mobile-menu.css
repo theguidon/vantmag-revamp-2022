@@ -37,6 +37,9 @@ header #mobile-menu .search-field input {
   border: none;
 
   font-size: var(--body-l-font-size);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 header #mobile-menu .search-field input::placeholder {
