@@ -7,12 +7,12 @@ get_header();
     class="mobile-hero"
     style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('<?php echo get_template_directory_uri() ?>/assets/images/about/00.jpg');"
   >
-    We are The GUIDON’s online magazine, a publication geared towards <span class="highlight">campus culture</span> and the people who make it.
+    We are The GUIDON’s online magazine, a publication geared towards <span class="highlight">campus culture</span> and the people who <span style="white-space: nowrap">make it.</span>
   </h2>
 
   <div class="general-container">
     <h3>
-      We are The GUIDON’s online magazine, a publication geared towards <span class="highlight">campus culture</span> and the people who make it.
+      We are The GUIDON’s online magazine, a publication geared towards <span class="highlight">campus culture</span> and the people who <span style="white-space: nowrap">make it.</span>
     </h3>
 
     <hr />
