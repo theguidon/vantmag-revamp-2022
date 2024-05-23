@@ -130,9 +130,15 @@ $suggq = new WP_Query(array(
         </div>
       </div>
 
-      <p class="blurb">
-        <?php echo $post->post_excerpt ?>
-      </p>
+      <?php
+      if (!empty($post->post_excerpt)) {
+      ?>
+        <p class="blurb">
+          <?php echo $post->post_excerpt ?>
+        </p>
+      <?php
+      }
+      ?>
     </div>
   </div>
 </main>
