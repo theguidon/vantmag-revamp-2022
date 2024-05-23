@@ -211,6 +211,10 @@
     row-gap: 16px;
   }
 
+  #article-info .title-container .share {
+    font-size: var(--body-font-size);
+  }
+
   #article-info .featured-image-container {
     height: fit-content;
 
