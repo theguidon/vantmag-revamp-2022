@@ -402,7 +402,7 @@ h6,
   }
 
   .article .excerpt {
-    font-size: var(--body-xs-font-size);
+    /* font-size: var(--body-xs-font-size); */
 
     margin: 0 0 4px;
     line-clamp: 2;
