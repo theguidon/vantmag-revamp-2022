@@ -94,6 +94,14 @@
   width: 200px;
 }
 
+.categ-container .latest-container .article:not(:first-of-type) .info {
+  justify-content: center;
+}
+
+.categ-container .latest-container .article:not(:first-of-type) .authors {
+  margin-top: 0;
+}
+
 
 .categ-container .all-articles-container .heading-container {
   margin: 0 0 24px;
