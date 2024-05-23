@@ -33,7 +33,10 @@ if ($has_icon) {
   />
 <?php
 }
-echo $rev_name;
+if ($rev_name == "Uncategorized")
+  echo "Other";
+else
+  echo $rev_name;
 
 
 if (isset($args['no_anchor']) && $args['no_anchor']) {
