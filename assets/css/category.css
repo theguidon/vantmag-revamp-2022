@@ -38,6 +38,8 @@
 .categ-hero .bookmark .name {
   /* font-size: var(--h2-font-size); */
   color: white;
+  /* line-height: 0; */
+  margin-bottom: calc(var(--h2-font-size) / -5);
 }
 
 .categ-hero .desc {
@@ -126,6 +128,7 @@
 
   .categ-hero .bookmark .name {
     font-size: var(--h3-font-size);
+    margin-bottom: calc(var(--h3-font-size) / -5);
   }
   
   .categ-container {
@@ -240,6 +243,7 @@
 
   .categ-hero .bookmark .name {
     font-size: var(--h2-font-size);
+    margin-bottom: calc(var(--h2-font-size) / -5)
   }
 
   .categ-hero .desc {
