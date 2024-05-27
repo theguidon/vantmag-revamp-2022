@@ -80,7 +80,11 @@
   padding: 64px 0;
 }
 
-#article-info .bar .general-container {
+#article-info .bar.no-blurb {
+  padding: 24px 0;
+}
+
+#article-info .bar:not(.no-blurb) .general-container {
   display: grid;
   grid-template-columns: 4fr 5fr;
   column-gap: 24px;
@@ -92,7 +96,8 @@
 }
 
 #article-info .bar .author-info .author {
-  margin: 0 0 28px;
+  /* margin: 0 0 28px; */
+  margin: 0 0 16px;
   color: white;
   font-family: "Calluna";
 }
@@ -170,6 +175,10 @@
     padding: 56px 0;
   }
 
+  #article-info .bar.no-blurb {
+    padding: 24px 0;
+  }
+
   #article-content {
     padding: 34px 16px 72px;
   }
@@ -184,6 +193,10 @@
     padding: 48px 0;
   }
 
+  #article-info .bar.no-blurb {
+    padding: 24px 0;
+  }
+
   #article-content {
     padding: 28px 16px 72px;
   }
@@ -196,6 +209,10 @@
 
   #article-info .bar {
     padding: 40px 0;
+  }
+
+  #article-info .bar.no-blurb {
+    padding: 32px 0;
   }
 
   #article-content {

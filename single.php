@@ -98,7 +98,7 @@ $suggq = new WP_Query(array(
   </div>
 
 
-  <div class="bar">
+  <div class="bar <?php if (empty(trim($post->post_excerpt))) { echo "no-blurb"; } ?>">
     <div class="general-container">
       <div class="author-info">
         <?php
@@ -131,7 +131,7 @@ $suggq = new WP_Query(array(
       </div>
 
       <?php
-      if (!empty($post->post_excerpt)) {
+      if (!empty(trim($post->post_excerpt))) {
       ?>
         <p class="blurb">
           <?php echo $post->post_excerpt ?>
