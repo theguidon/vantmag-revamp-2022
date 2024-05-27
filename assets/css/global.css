@@ -115,7 +115,7 @@ h6,
 /* chip */
 .chip {
   color: white;
-  font-size: 14px;
+  font-size: var(--body-s-font-size);
   font-family: Roboto, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -135,7 +135,8 @@ h6,
 }
 
 .chip > img {
-  width: 16px;
+  object-fit: contain;
+  object-position: center;
   height: 16px;
 }
 
