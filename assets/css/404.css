@@ -18,7 +18,8 @@
 #page-404 #search-field {
   margin: 0 0 56px;
 
-  background-color: var(--vantage-purple-light);
+  /* background-color: var(--vantage-purple-light); */
+  background-color: #DDDFFECC;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;

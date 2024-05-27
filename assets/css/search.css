@@ -6,7 +6,8 @@
 #search-results #search-field {
   margin: 0 0 40px;
 
-  background-color: var(--vantage-purple-light);
+  /* background-color: var(--vantage-purple-light); */
+  background-color: #DDDFFECC;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
