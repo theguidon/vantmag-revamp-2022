@@ -74,6 +74,10 @@
     margin: 0 0 20px;
   }
 
+  #author-info .name {
+    font-size: var(--h1-font-size);
+  }
+
   #author-articles {
     margin-bottom: 40px;
   }
