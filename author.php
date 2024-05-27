@@ -18,7 +18,7 @@ $auth = $wp_query->get_queried_object();
     /> -->
 
     <div>
-      <p class="written">Written</p>
+      <p class="written">Writer</p>
       <h1 class="name"><?php echo $auth->display_name ?></h1>
       <p class="desc"><?php echo $auth->description ?></p>
     </div>

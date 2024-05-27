@@ -17,7 +17,8 @@
 #author-info .name {
   color: var(--vantage-purple-dark);
   font-size: 56px;
-  font-family: "Roboto";
+  /* font-family: "Roboto"; */
+  font-family: "Calluna";
 
   margin: 0 0 8px;
 }
