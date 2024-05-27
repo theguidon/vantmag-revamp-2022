@@ -248,9 +248,9 @@ h6,
 #load-more,
 .load-more {
   background-color: var(--vantage-purple-light);
-  padding: 6px 64px;
+  padding: 10px 64px;
   border: none;
-  border-radius: 16px;
+  border-radius: 24px;
   display: block;
   cursor: pointer;
   width: fit-content;
@@ -262,6 +262,13 @@ h6,
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+
+  transition: 0.3s;
+}
+
+#load-more:hover,
+.load-more:hover {
+  background-color: #D2D4FE;
 }
 
 /* heading container */
