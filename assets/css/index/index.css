@@ -123,4 +123,8 @@
   #index #hero .article .general-container {
     padding: 0 36px;
   }
+
+  #index #hero .article .title {
+    font-size: var(--h1-font-size);
+  }
 }
