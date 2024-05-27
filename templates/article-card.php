@@ -10,6 +10,10 @@ $hover_color = vant_get_color( vant_get_categ_tag_name(get_the_category($current
 
 if ($hover_color == '#33333340')
   $hover_color = 'var(--vantage-purple-light)';
+else if ($hover_color == '#75548940')
+  $hover_color = '#EDE0F5FF';
+else if ($hover_color == '#ef3e6840')
+  $hover_color = '#FCDCE4FF';
 ?>
 
 <a
