@@ -137,6 +137,16 @@
 
 #article-content a {
   color: var(--vantage-purple);
+  font-family: inherit;
+}
+
+#article-content h1,
+#article-content h2,
+#article-content h3,
+#article-content h4,
+#article-content h5,
+#article-content h6 {
+  font-size: var(--h5-font-size);
 }
 
 #article-content img {
