@@ -42,7 +42,12 @@ $wp_query->query($wp_query->query_vars);
     ?>
 
     <h2 class="name">
-      <?php echo vant_get_categ_tag_name($categ->name) ?>
+      <?php
+      if ($categ->slug == 'uncategorized')
+        echo "Other";
+      else
+        echo vant_get_categ_tag_name($categ->name);
+      ?>
     </h2>
   </div>
 
