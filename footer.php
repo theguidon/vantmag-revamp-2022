@@ -94,8 +94,8 @@ $latest_post = get_posts(array(
           'music',
           'hype',
           'hub',
-          'vantage-point',
-          'expose',
+          // 'vantage-point',
+          // 'expose',
         );
 
         for ($i = 0; $i < count($categs); $i++) {
