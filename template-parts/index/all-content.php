@@ -8,7 +8,7 @@
     'hype',
     'hub',
     // 'vantage-point',
-    // 'expose',
+    'expose',
   );
   ?>
 

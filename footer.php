@@ -95,7 +95,7 @@ $latest_post = get_posts(array(
           'hype',
           'hub',
           // 'vantage-point',
-          // 'expose',
+          'expose',
         );
 
         for ($i = 0; $i < count($categs); $i++) {

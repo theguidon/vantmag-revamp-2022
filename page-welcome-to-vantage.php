@@ -38,7 +38,7 @@ get_header();
           'hype',
           'hub',
           // 'vantage-point',
-          // 'expose',
+          'expose',
         );
 
         for ($i = 0; $i < count($categs); $i++) {
