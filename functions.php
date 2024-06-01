@@ -184,6 +184,15 @@ function vant_posts_where($where, $wp_query) {
 }
 
 
+/**
+ * Adds dynamic title tag support
+ */
+function main_add_title_support() {
+  add_theme_support('title-tag');
+}
+
+add_action('after_setup_theme', 'main_add_title_support');
+
 
 /**
  * COPIED FROM ORIGINAL
