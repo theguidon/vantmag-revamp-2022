@@ -79,7 +79,7 @@ $suggq = new WP_Query(array(
     class="featured-image-container"
     style="<?php
       if (has_post_thumbnail())
-        echo "background-image: url('" . wp_get_attachment_image_src(get_post_thumbnail_id(), 'large')[0] . "');";
+        echo "background-image: url('" . wp_get_attachment_image_src(get_post_thumbnail_id(), 'single-post-thumbnail')[0] . "');";
       else
         echo "background-color: var(--vantage-purple-light);";
         // echo "background-image: url('" . get_template_directory_uri() . "/assets/images/vantmag_16x9.png');";
@@ -89,7 +89,7 @@ $suggq = new WP_Query(array(
     if (has_post_thumbnail()) {
     ?>
       <img
-        src="<?php echo wp_get_attachment_image_src(get_post_thumbnail_id(), 'large')[0] ?>"
+        src="<?php echo wp_get_attachment_image_src(get_post_thumbnail_id(), 'single-post-thumbnail')[0] ?>"
         alt="<?php the_title() ?>"
       />
     <?php
