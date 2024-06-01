@@ -7,7 +7,7 @@
     'theater-and-the-arts',
     'hype',
     'hub',
-    'vantage-point',
+    // 'vantage-point',
     // 'expose',
   );
   ?>
