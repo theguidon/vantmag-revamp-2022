@@ -13,7 +13,7 @@ function vant_loadmore_ajax_handler() {
     $args['post_type'] = 'post';
     $args['paged'] = $_POST['page'] + 1;
   } else {
-    $args['offset'] = 3 + ($_POST['page'] - 1) * 6;
+    $args['offset'] = 3 + $_POST['page'] * 6;
   }
 
   // it is always better to use WP_Query but not here
