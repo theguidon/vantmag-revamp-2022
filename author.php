@@ -35,7 +35,7 @@ $auth = $wp_query->get_queried_object();
     <?php
     $query = new WP_Query(array(
       'author_name' => $auth->user_nicename,
-      'posts_per_page' => 6,
+      // 'posts_per_page' => 6,
       'numberposts' => -1,
     ));
 
