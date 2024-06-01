@@ -29,7 +29,7 @@ else if ($hover_color == '#ef3e6840')
       class="thumbnail"
       src="<?php
         if (has_post_thumbnail($current_post->ID)) {
-          echo wp_get_attachment_image_src(get_post_thumbnail_id($current_post->ID), 'medium')[0];
+          echo wp_get_attachment_image_src(get_post_thumbnail_id($current_post->ID), 'large')[0];
         } else {
           echo get_template_directory_uri() . "/assets/images/vantmag_16x9.png";
         }
