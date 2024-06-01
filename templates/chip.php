@@ -29,7 +29,7 @@ if (isset($args['no_anchor']) && $args['no_anchor']) {
 if ($has_icon) {
 ?>
   <img
-    src="<?php echo get_template_directory_uri() . "/assets/images/icons/chip/" . $args['term']->slug . ".svg" ?>"
+    src="<?php echo get_template_directory_uri() . "/assets/images/icons/chip/" . $args['term']->slug . ".png" ?>"
   />
 <?php
 }

@@ -35,7 +35,7 @@ $wp_query->query($wp_query->query_vars);
     if ($has_icon) {
     ?>
       <img
-        src="<?php echo get_template_directory_uri() . "/assets/images/icons/chip/" . $categ->slug . ".svg" ?>"
+        src="<?php echo get_template_directory_uri() . "/assets/images/icons/chip/" . $categ->slug . ".png" ?>"
       />
     <?php
     }

@@ -7,8 +7,8 @@
     'theater-and-the-arts',
     'hype',
     'hub',
-    // 'vantage-point',
     'expose',
+    // 'vantage-point',
   );
   ?>
 
@@ -21,7 +21,7 @@
     <?php
     for ($i = 0; $i < count($categs); $i++) {
       $term = null;
-      if ($i != 6)
+      if ($i != 7)
         $term = get_term_by('slug', $categs[$i], 'category');
       else
         $term = get_term_by('slug', $categs[$i], 'post_tag');
@@ -36,8 +36,8 @@
         class="icon"
         style="
           --active-color: <?php echo vant_get_color(vant_get_categ_tag_name($term->name)) ?>;
-          -webkit-mask: url('<?php echo get_template_directory_uri() ?>/assets/images/icons/chip/<?php echo $term->slug ?>.svg') no-repeat center;
-          mask: url('<?php echo get_template_directory_uri() ?>/assets/images/icons/chip/<?php echo $term->slug ?>.svg') no-repeat center;
+          -webkit-mask: url('<?php echo get_template_directory_uri() ?>/assets/images/icons/chip/<?php echo $term->slug ?>.png') no-repeat center;
+          mask: url('<?php echo get_template_directory_uri() ?>/assets/images/icons/chip/<?php echo $term->slug ?>.png') no-repeat center;
         "
       >
       </div>
@@ -51,7 +51,7 @@
   <?php
   for ($i = 0; $i < count($categs); $i++) {
     $categ_query = null;
-    if ($i == 6) {
+    if ($i == 7) {
       $categ_query = new WP_Query(array(
         'tag' => $categs[$i],
         'posts_per_page' => 9,
@@ -83,7 +83,7 @@
       id="<?php echo $categs[$i] ?>-load-more"
       class="load-more <?php if ($i == 0) { echo "active"; } ?>"
       href="<?php
-        if ($i != 6)
+        if ($i != 7)
           echo get_term_link(get_term_by('slug', $categs[$i], 'category'));
         else
           echo get_term_link(get_term_by('slug', $categs[$i], 'post_tag'));

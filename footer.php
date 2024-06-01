@@ -100,7 +100,7 @@ $latest_post = get_posts(array(
 
         for ($i = 0; $i < count($categs); $i++) {
           $term = null;
-          if ($i != 6)
+          if ($i != 7)
             $term = get_term_by('slug', $categs[$i], 'category');
           else
             $term = get_term_by('slug', $categs[$i], 'post_tag');
