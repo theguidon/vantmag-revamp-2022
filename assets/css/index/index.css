@@ -54,6 +54,7 @@
   font-size: var(--h2-font-size);
   font-family: "Calluna";
   margin: 0;
+  width: 75%;
 }
 
 #index #hero .article .author-info {
@@ -112,6 +113,10 @@
 
   #index #hero .article .general-container {
     padding: 0 42px;
+  }
+
+  #index #hero .article .title {
+    width: 100%;
   }
 }
 
